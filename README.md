@@ -39,7 +39,7 @@ The model is instructed to:
 ---
 
 ## Project Structure
-
+```
 InsightRAG/
 ├── dataset/
 │   ├── huggingface_docs.json
@@ -53,6 +53,7 @@ InsightRAG/
 ├── runGroq.py
 ├── runGroqStreamlit.py
 └── README.md
+```
   
 ---
 
