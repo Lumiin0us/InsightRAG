@@ -1,0 +1,1132 @@
+[
+  {
+    "url": "https://huggingface.co/docs",
+    "title": "Documentation",
+    "sections": [
+      {
+        "heading": "Hub & Client Libraries",
+        "content": "Hub\nHost Git-based models, datasets, and Spaces on the HF Hub\nHub Python Library\nPython client to interact with the Hugging Face Hub\nHuggingface.js\nJavaScript libraries for Hugging Face with built-in TS types\nTasks\nExplore demos, models, and datasets for any ML tasks\nDataset viewer\nAPI for metadata, stats, and content of HF Hub datasets\n"
+      },
+      {
+        "heading": "Deployment & Inference",
+        "content": "Inference Providers\nCall 200k+ models hosted by our 10+ Inference partners\nInference Endpoints (dedicated)\nDeploy models on dedicated & fully managed infrastructure on HF\nDeploying on AWS\nTrain/deploy models from Hugging Face to AWS with DLCs\nText Generation Inference\nServe language models with TGI optimized toolkit\nText Embeddings Inference\nServe embeddings models with TEI optimized toolkit\nMicrosoft Azure\nDeploy Hugging Face models on Microsoft Azure\nGoogle Cloud\nTrain and Deploy Hugging Face models on Google Cloud\n"
+      },
+      {
+        "heading": "Core ML Libraries",
+        "content": "Transformers\nState-of-the-art AI models for PyTorch\nDiffusers\nState-of-the-art Diffusion models in PyTorch\nDatasets\nAccess & share datasets for any ML tasks\nTransformers.js\nState-of-the-art ML running directly in your browser\nTokenizers\nFast tokenizers optimized for research & production\nEvaluate\nEvaluate and compare models performance\ntimm\nState-of-the-art vision models: layers, optimizers, and utilities\nSentence Transformers\nEmbeddings, Retrieval, and Reranking\nKernels\nLoad and run compute kernels from the Hugging Face Hub\n"
+      },
+      {
+        "heading": "Training & Optimization",
+        "content": "PEFT\nParameter-efficient finetuning for large language models\nAccelerate\nTrain PyTorch models with multi-GPU, TPU, mixed precision\nOptimum\nOptimize HF Transformers for faster training/inference\nAWS Trainium & Inferentia\nTrain/deploy Transformers/Diffusers on AWS\nGoogle TPUs\nTrain and Deploy models on Google TPUs via Optimum.\nTRL\nTrain transformers LMs with reinforcement learning\nSafetensors\nSafe way to store/distribute neural network weights\nBitsandbytes\nOptimize and quantize models with bitsandbytes\nLighteval\nAll-in-one toolkit to evaluate LLMs across multiple backends\n"
+      },
+      {
+        "heading": "Collaboration & Extras",
+        "content": "Gradio\nBuild ML demos and web apps with a few lines of Python\nTrackio\nA lightweight, local-first, and free experiment tracking Python library\nsmolagents\nSmol library to build great agents in Python\nLeRobot\nMaking AI for Robotics more accessible with end-to-end learning\nReachy Mini\nOpen-source expressive robot SDK for hackers and AI builders\nAutoTrain\nAutoTrain API and UI for seamless model training\nChat UI\nOpen source chat frontend powering HuggingChat\nLeaderboards\nCreate custom Leaderboards on Hugging Face\nArgilla\nCollaboration tool for building high-quality datasets\nDistilabel\nFramework for synthetic data generation and AI feedback\n"
+      },
+      {
+        "heading": "Community",
+        "content": "Blog\nLearn\nDiscord\nForum\nGitHub\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/hub",
+    "title": "Hub",
+    "sections": [
+      {
+        "heading": "Hub",
+        "content": "Hub documentation\nHugging Face Hub documentation\n"
+      },
+      {
+        "heading": "Hub",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Hugging Face Hub documentation",
+        "content": "The Hugging Face Hub is a platform with over 2M models, 500k datasets, and 1M demo apps (Spaces), all open source and publicly available, in an online platform where people can easily collaborate and build ML together. The Hub works as a central place where anyone can explore, experiment, collaborate, and build technology with Machine Learning. Are you ready to join the path towards open source Machine Learning? \ud83e\udd17\n"
+      },
+      {
+        "heading": "What\u2019s the Hugging Face Hub?",
+        "content": "We are helping the community work together towards the goal of advancing Machine Learning \ud83d\udd25.\nThe Hugging Face Hub is a platform with over 2M models, 500k datasets, and 1M demos in which people can easily collaborate in their ML workflows. The Hub works as a central place where anyone can share, explore, discover, and experiment with open-source Machine Learning.\nNo single company, including the Tech Titans, will be able to \u201csolve AI\u201d by themselves \u2013 the only way we\u2019ll achieve this is by sharing knowledge and resources in a community-centric approach. We are building the largest open-source collection of models, datasets, and demos on the Hugging Face Hub to democratize and advance ML for everyone \ud83d\ude80.\nWe encourage you to read the Code of Conduct and the Content Guidelines to familiarize yourself with the values that we expect our community members to uphold \ud83e\udd17.\n"
+      },
+      {
+        "heading": "What can you find on the Hub?",
+        "content": "The Hugging Face Hub hosts Git-based repositories, which are version-controlled buckets that can contain all your files. \ud83d\udcbe\nOn it, you\u2019ll be able to upload and discover\u2026\nModels: hosting the latest state-of-the-art models for LLM, text, vision, and audio tasks\nDatasets: featuring a wide variety of data for different domains and modalities\nSpaces: interactive apps for demonstrating ML models directly in your browser\nThe Hub offers versioning, commit history, diffs, branches, and over a dozen library integrations !\nAll repositories build on Xet , a new technology to efficiently store Large Files inside Git, intelligently splitting files into unique chunks and accelerating uploads and downloads.\nYou can learn more about the features that all repositories share in the Repositories documentation .\n"
+      },
+      {
+        "heading": "Models",
+        "content": "You can discover and use dozens of thousands of open-source ML models shared by the community. To promote responsible model usage and development, model repos are equipped with Model Cards to inform users of each model\u2019s limitations and biases. Additional metadata about info such as their tasks, languages, and evaluation results can be included, with training metrics charts even added if the repository contains TensorBoard traces . It\u2019s also easy to add an inference widget to your model, allowing anyone to play with the model directly in the browser! For programmatic access, a serverless API is provided by Inference Providers .\nTo upload models to the Hub, or download models and integrate them into your work, explore the Models documentation . You can also choose from over a dozen libraries such as \ud83e\udd17 Transformers, Asteroid, and ESPnet that support the Hub.\n"
+      },
+      {
+        "heading": "Datasets",
+        "content": "The Hub is home to over 500k public datasets in more than 8k languages that can be used for a broad range of tasks across NLP, Computer Vision, and Audio. The Hub makes it simple to find, download, and upload datasets. Datasets are accompanied by extensive documentation in the form of Dataset Cards and Data Studio to let you explore the data directly in your browser. While many datasets are public, organizations and individuals can create private datasets to comply with licensing or privacy issues. You can learn more about Datasets here on the Hugging Face Hub documentation .\nThe \ud83e\udd17 datasets library allows you to programmatically interact with the datasets, so you can easily use datasets from the Hub in your projects. With a single line of code, you can access the datasets; even if they are so large they don\u2019t fit in your computer, you can use streaming to efficiently access the data.\ndatasets\n"
+      },
+      {
+        "heading": "Spaces",
+        "content": "Spaces is a simple way to host ML demo apps on the Hub. They allow you to build your ML portfolio, showcase your projects at conferences or to stakeholders, and work collaboratively with other people in the ML ecosystem.\nWe currently support two awesome Python SDKs ( Gradio and Streamlit ) that let you build cool apps in a matter of minutes. Users can also create static Spaces, which are simple HTML/CSS/JavaScript pages, or deploy any Docker-based application.\nIf you need GPU power for your demos, try ZeroGPU : it dynamically provides NVIDIA H200 GPUs, in real-time, only when needed.\nAfter you\u2019ve explored a few Spaces (take a look at our Space of the Week! ), dive into the Spaces documentation to learn all about how you can create your own Space. You\u2019ll also be able to upgrade your Space to run on a GPU or other accelerated hardware. \u26a1\ufe0f\n"
+      },
+      {
+        "heading": "Organizations",
+        "content": "Companies, universities and non-profits are an essential part of the Hugging Face community! The Hub offers Organizations , which can be used to group accounts and manage datasets, models, and Spaces. Educators can also create collaborative organizations for students using Hugging Face for Classrooms . An organization\u2019s repositories will be featured on the organization\u2019s page and every member of the organization will have the ability to contribute to the repository. In addition to conveniently grouping all of an organization\u2019s work, the Hub allows admins to set roles to control access to repositories , and manage their organization\u2019s payment method and billing info . Machine Learning is more fun when collaborating! \ud83d\udd25\nExplore existing organizations , create a new organization here , and then visit the Organizations documentation to learn more.\n"
+      },
+      {
+        "heading": "Security",
+        "content": "The Hugging Face Hub supports security and access control features to give you the peace of mind that your code, models, and data are safe. Visit the Security section in these docs to learn about:\nUser Access Tokens\nAccess Control for Organizations\nSigning commits with GPG\nMalware scanning\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/huggingface_hub",
+    "title": "Hub Python Library",
+    "sections": [
+      {
+        "heading": "Hub Python Library",
+        "content": "Hub Python Library documentation\n\ud83e\udd17 Hub client library\n"
+      },
+      {
+        "heading": "Hub Python Library",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "\ud83e\udd17 Hub client library",
+        "content": "The huggingface_hub library allows you to interact with the Hugging Face\nHub , a machine learning platform for creators and collaborators.\nDiscover pre-trained models and datasets for your projects or play with the hundreds of\nmachine learning apps hosted on the Hub. You can also create and share your own models\nand datasets with the community. The huggingface_hub library provides a simple way to\ndo all these things with Python.\nhuggingface_hub\nhuggingface_hub\nRead the quick start guide to get up and running with the huggingface_hub library. You will learn how to download files from the Hub, create a\nrepository, and upload files to the Hub. Keep reading to learn more about how to manage\nyour repositories on the \ud83e\udd17 Hub, how to interact in discussions or even how to run inference.\nhuggingface_hub\nPractical guides to help you achieve a specific goal. Take a look at these guides to learn how to use huggingface_hub to solve real-world problems.\nExhaustive and technical description of huggingface_hub classes and methods.\nHigh-level explanations for building a better understanding of huggingface_hub philosophy.\n"
+      },
+      {
+        "heading": "Contribute",
+        "content": "All contributions to the huggingface_hub are welcomed and equally valued! \ud83e\udd17 Besides\nadding or fixing existing issues in the code, you can also help improve the\ndocumentation by making sure it is accurate and up-to-date, help answer questions on\nissues, and request new features you think will improve the library. Take a look at the contribution\nguide to\nlearn more about how to submit a new issue or feature request, how to submit a pull\nrequest, and how to test your contributions to make sure everything works as expected.\nhuggingface_hub\nContributors should also be respectful of our code of\nconduct to\ncreate an inclusive and welcoming collaborative space for everyone.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/huggingface.js",
+    "title": "Huggingface.js",
+    "sections": [
+      {
+        "heading": "Huggingface.js",
+        "content": "Huggingface.js documentation\nHugging Face JS libraries\n"
+      },
+      {
+        "heading": "Huggingface.js",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n\n// Programmatically interact with the Hub await createRepo ({ repo : { type : \"model\" , name : \"my-user/nlp-model\" }, accessToken : HF_TOKEN }); await uploadFile ({ repo : \"my-user/nlp-model\" , accessToken : HF_TOKEN , // Can work with native File in browsers file : { path : \"pytorch_model.bin\" , content : new Blob (...)\n  }\n}); // Use all supported Inference Providers! await inference. chatCompletion ({ model : \"meta-llama/Llama-3.1-8B-Instruct\" , provider : \"sambanova\" , // or together, fal-ai, replicate, cohere \u2026 messages : [\n    { role : \"user\" , content : \"Hello, nice to meet you!\" ,\n    },\n  ], max_tokens : 512 , temperature : 0.5 ,\n}); await inference. textToImage ({ model : \"black-forest-labs/FLUX.1-dev\" , provider : \"replicate\" , inputs : \"a picture of a green bird\" ,\n}); // and much more\u2026\n"
+      },
+      {
+        "heading": "Hugging Face JS libraries",
+        "content": "This is a collection of JS libraries to interact with the Hugging Face API, with TS types included.\n@huggingface/hub : Interact with huggingface.co to create or delete repos and commit / download files\n@huggingface/inference : Use all supported (serverless) Inference Providers or switch to Inference Endpoints (dedicated) to make calls to 100,000+ Machine Learning models\n@huggingface/mcp-client : A Model Context Protocol (MCP) client, and a tiny Agent library, built on top of InferenceClient.\n@huggingface/gguf : A GGUF parser that works on remotely hosted files.\n@huggingface/dduf : Similar package for DDUF (DDUF Diffusers Unified Format)\n@huggingface/tasks : The definition files and source-of-truth for the Hub\u2019s main primitives like pipeline tasks, model libraries, etc.\n@huggingface/jinja : A minimalistic JS implementation of the Jinja templating engine, to be used for ML chat templates.\n@huggingface/space-header : Use the Space mini_header outside Hugging Face\nmini_header\n@huggingface/ollama-utils : Various utilities for maintaining Ollama compatibility with models on the Hugging Face Hub.\n@huggingface/tiny-agents : A tiny, model-agnostic library for building AI agents that can use tools.\nWe use modern features to avoid polyfills and dependencies, so the libraries will only work on modern browsers / Node.js >= 18 / Bun / Deno.\nThe libraries are still very young, please help us by opening issues!\n"
+      },
+      {
+        "heading": "From NPM",
+        "content": "To install via NPM, you can download the libraries as needed:\nnpm install @huggingface/hub\nnpm install @huggingface/inference\nnpm install @huggingface/mcp-client\nThen import the libraries in your code:\nimport { createRepo, commit, deleteRepo, listFiles } from \"@huggingface/hub\" ; import { InferenceClient } from \"@huggingface/inference\" ; import { McpClient } from \"@huggingface/mcp-client\" ; import type { RepoId } from \"@huggingface/hub\" ;\n"
+      },
+      {
+        "heading": "From CDN or Static hosting",
+        "content": "You can run our packages with vanilla JS, without any bundler, by using a CDN or static hosting. Using ES modules , i.e. <script type=\"module\"> , you can import the libraries in your code:\n<script type=\"module\">\n< script type = \"module\" > import { InferenceClient } from 'https://cdn.jsdelivr.net/npm/@huggingface/inference@4.13.15/+esm' ; import { createRepo, commit, deleteRepo, listFiles } from \"https://cdn.jsdelivr.net/npm/@huggingface/hub@2.10.5/+esm\" ; </ script >\n"
+      },
+      {
+        "heading": "Deno",
+        "content": "// esm.sh import { InferenceClient } from \"https://esm.sh/@huggingface/inference\" import { createRepo, commit, deleteRepo, listFiles } from \"https://esm.sh/@huggingface/hub\" // or npm: import { InferenceClient } from \"npm:@huggingface/inference\" import { createRepo, commit, deleteRepo, listFiles } from \"npm:@huggingface/hub\"\n"
+      },
+      {
+        "heading": "Usage examples",
+        "content": "Get your HF access token in your account settings .\n"
+      },
+      {
+        "heading": "@huggingface/inference examples",
+        "content": "import { InferenceClient } from \"@huggingface/inference\" ; const HF_TOKEN = \"hf_...\" ; const client = new InferenceClient ( HF_TOKEN ); // Chat completion API const out = await client. chatCompletion ({ model : \"meta-llama/Llama-3.1-8B-Instruct\" , messages : [{ role : \"user\" , content : \"Hello, nice to meet you!\" }], max_tokens : 512 }); console . log (out. choices [ 0 ]. message ); // Streaming chat completion API for await ( const chunk of client. chatCompletionStream ({ model : \"meta-llama/Llama-3.1-8B-Instruct\" , messages : [{ role : \"user\" , content : \"Hello, nice to meet you!\" }], max_tokens : 512 })) { console . log (chunk. choices [ 0 ]. delta . content );\n} /// Using a third-party provider: await client. chatCompletion ({ model : \"meta-llama/Llama-3.1-8B-Instruct\" , messages : [{ role : \"user\" , content : \"Hello, nice to meet you!\" }], max_tokens : 512 , provider : \"sambanova\" , // or together, fal-ai, replicate, cohere \u2026 }) await client. textToImage ({ model : \"black-forest-labs/FLUX.1-dev\" , inputs : \"a picture of a green bird\" , provider : \"fal-ai\" ,\n}) // You can also omit \"model\" to use the recommended model for the task await client. translation ({ inputs : \"My name is Wolfgang and I live in Amsterdam\" , parameters : { src_lang : \"en\" , tgt_lang : \"fr\" ,\n  },\n}); // pass multimodal files or URLs as inputs await client. imageToText ({ model : 'nlpconnect/vit-gpt2-image-captioning' , data : await ( await fetch ( 'https://picsum.photos/300/300' )). blob (),\n}) // Using your own dedicated inference endpoint: https://hf.co/docs/inference-endpoints/ const gpt2Client = client. endpoint ( 'https://xyz.eu-west-1.aws.endpoints.huggingface.cloud/gpt2' ); const { generated_text } = await gpt2Client. textGeneration ({ inputs : 'The answer to the universe is' }); // Chat Completion const llamaEndpoint = client. endpoint ( \"https://router.huggingface.co/hf-inference/models/meta-llama/Llama-3.1-8B-Instruct\" ); const out = await llamaEndpoint. chatCompletion ({ model : \"meta-llama/Llama-3.1-8B-Instruct\" , messages : [{ role : \"user\" , content : \"Hello, nice to meet you!\" }], max_tokens : 512 ,\n}); console . log (out. choices [ 0 ]. message );\n"
+      },
+      {
+        "heading": "@huggingface/hub examples",
+        "content": "import { createRepo, uploadFile, deleteFiles } from \"@huggingface/hub\" ; const HF_TOKEN = \"hf_...\" ; await createRepo ({ repo : \"my-user/nlp-model\" , // or { type: \"model\", name: \"my-user/nlp-test\" }, accessToken : HF_TOKEN }); await uploadFile ({ repo : \"my-user/nlp-model\" , accessToken : HF_TOKEN , // Can work with native File in browsers file : { path : \"pytorch_model.bin\" , content : new Blob (...)\n  }\n}); await deleteFiles ({ repo : { type : \"space\" , name : \"my-user/my-space\" }, // or \"spaces/my-user/my-space\" accessToken : HF_TOKEN , paths : [ \"README.md\" , \".gitattributes\" ]\n});\n"
+      },
+      {
+        "heading": "@huggingface/mcp-client example",
+        "content": "import { Agent } from '@huggingface/mcp-client' ; const HF_TOKEN = \"hf_...\" ; const agent = new Agent ({ provider : \"auto\" , model : \"Qwen/Qwen2.5-72B-Instruct\" , apiKey : HF_TOKEN , servers : [\n    { // Playwright MCP command : \"npx\" , args : [ \"@playwright/mcp@latest\" ],\n    },\n  ],\n}); await agent. loadTools (); for await ( const chunk of agent. run ( \"What are the top 5 trending models on Hugging Face?\" )) { if ( \"choices\" in chunk) { const delta = chunk. choices [ 0 ]?. delta ; if (delta. content ) { console . log (delta. content );\n        }\n    }\n}\nThere are more features of course, check each library\u2019s README!\n"
+      },
+      {
+        "heading": "Formatting & testing",
+        "content": "sudo corepack enable\npnpm install\n\npnpm -r format:check\npnpm -r lint:check\npnpm -r test\n"
+      },
+      {
+        "heading": "Building",
+        "content": "pnpm -r build\nThis will generate ESM and CJS javascript files in packages/*/dist , eg packages/inference/dist/index.mjs .\npackages/*/dist\npackages/inference/dist/index.mjs\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/tasks",
+    "title": "Tasks",
+    "sections": [
+      {
+        "heading": "Tasks",
+        "content": "Hugging Face is the home for all Machine Learning tasks. Here you can find what you need to get started with a\n\t\t\t\ttask: demos, use cases, models, datasets, and more!\n"
+      },
+      {
+        "heading": "Multimodal",
+        "content": "11,142 models\n178 models\n242 models\n130 models\n21,354 models\n50 models\n30 models\n281 models\n627 models\n"
+      },
+      {
+        "heading": "Natural Language Processing",
+        "content": "16,389 models\n16,289 models\n13,656 models\n14,517 models\n2,650 models\n182 models\n111,448 models\n337,875 models\n851 models\n25,865 models\n8,447 models\n458 models\n"
+      },
+      {
+        "heading": "Computer Vision",
+        "content": "291 models\n25,991 models\n1,030 models\n2,266 models\n2,232 models\n1,362 models\n673 models\n235 models\n189 models\n4,545 models\n2,045 models\n92,698 models\n1,014 models\n2,473 models\n110 models\n1,150 models\n100 models\n106 models\n436 models\n"
+      },
+      {
+        "heading": "Audio",
+        "content": "3,964 models\n963 models\n28,777 models\n4,341 models\n"
+      },
+      {
+        "heading": "Tabular",
+        "content": "484 models\n302 models\n"
+      },
+      {
+        "heading": "Reinforcement Learning",
+        "content": "70,317 models\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/dataset-viewer",
+    "title": "Dataset viewer",
+    "sections": [
+      {
+        "heading": "Dataset viewer",
+        "content": "Dataset viewer documentation\n\ud83e\udd17 Dataset viewer\n"
+      },
+      {
+        "heading": "Dataset viewer",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "\ud83e\udd17 Dataset viewer",
+        "content": "The dataset page includes a table with the dataset\u2019s contents, arranged by pages of 100 rows. You can navigate between pages using the buttons at the bottom of the table, filter, search, look at basic statistics, and more.\nDataset viewer of the OpenBookQA dataset\n"
+      },
+      {
+        "heading": "Contents of the documentation",
+        "content": "These documentation pages are focused on the dataset viewer\u2019s backend (code in https://github.com/huggingface/dataset-viewer ), which provides the table with pre-computed data through an API for all the datasets on the Hub. You can explore the sections if you want to consume the API for your application or to understand how we preprocess the datasets.\nOtherwise, if you want to learn about creating datasets from the Hub\u2019s web-based interface, configuring the dataset viewer for data, images , or audio, or fixing errors, you might prefer reading the Datasets Hub documentation pages . Take also a look to the example datasets collections: splits configuration , subsets configuration , CSV data files and image datasets .\n"
+      },
+      {
+        "heading": "Dataset viewer\u2019s backend",
+        "content": "The dataset viewer\u2019s backend provides an API for visualizing and exploring all types of datasets - computer vision, speech, text, and tabular - stored on the Hugging Face Hub .\nThe main feature of the dataset viewer\u2019s backend is to auto-convert all the Hub datasets to Parquet . Read more in the Parquet section .\nAs datasets increase in size and data type richness, the cost of preprocessing (storage and compute) these datasets can be challenging and time-consuming.\nTo help users access these modern datasets, The dataset viewer runs a server behind the scenes to generate the API responses ahead of time and stores them in a database so they are instantly returned when you make a query through the API.\nLet the dataset viewer take care of the heavy lifting so you can use a simple REST API on any of the 100,000+ datasets on Hugging Face to:\nList the dataset splits, column names and data types\nGet the dataset size (in number of rows or bytes)\nDownload and view rows at any index in the dataset\nSearch a word in the dataset\nFilter rows based on a query string\nGet insightful statistics about the data\nAccess the dataset as parquet files to use in your favorite processing or analytics framework\nJoin the growing community on the forum or Discord today, and give the dataset viewer repository a \u2b50\ufe0f if you\u2019re interested in the latest updates!\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/inference-providers",
+    "title": "Inference Providers",
+    "sections": [
+      {
+        "heading": "Inference Providers",
+        "content": "Inference Providers documentation\nInference Providers\n"
+      },
+      {
+        "heading": "Inference Providers",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Inference Providers",
+        "content": "Hugging Face\u2019s Inference Providers give developers access to hundreds of machine learning models, powered by world-class inference providers. They are also integrated into our client SDKs (for JS and Python), making it easy to explore serverless inference of models on your favorite providers.\n"
+      },
+      {
+        "heading": "Partners",
+        "content": "Our platform integrates with leading AI infrastructure providers, giving you access to their specialized capabilities through a single, consistent API. Here\u2019s what each partner supports:\n"
+      },
+      {
+        "heading": "Why Choose Inference Providers?",
+        "content": "When you build AI applications, it\u2019s tough to manage multiple provider APIs, comparing model performance, and dealing with varying reliability. Inference Providers solves these challenges by offering:\nInstant Access to Cutting-Edge Models : Go beyond mainstream providers to access thousands of specialized models across multiple AI tasks. Whether you need the latest language models, state-of-the-art image generators, or domain-specific embeddings, you\u2019ll find them here.\nZero Vendor Lock-in : Unlike being tied to a single provider\u2019s model catalog, you get access to models from Cerebras, Groq, Together AI, Replicate, and more \u2014 all through one consistent interface.\nProduction-Ready Performance : Built for enterprise workloads with the reliability your applications demand.\nHere\u2019s what you can build:\nText Generation : Use Large language models with tool-calling capabilities for chatbots, content generation, and code assistance\nImage and Video Generation : Create custom images and videos, including support for LoRAs and style customization\nSearch & Retrieval : State-of-the-art embeddings for semantic search, RAG systems, and recommendation engines\nTraditional ML Tasks : Ready-to-use models for classification, NER, summarization, and speech recognition\n\u26a1 Get Started for Free : Inference Providers includes a generous free tier, with additional credits for PRO users and Team & Enterprise organizations .\n"
+      },
+      {
+        "heading": "Key Features",
+        "content": "\ud83c\udfaf All-in-One API : A single API for text generation, image generation, document embeddings, NER, summarization, image classification, and more.\n\ud83d\udd00 Multi-Provider Support : Easily run models from top-tier providers like fal, Replicate, Sambanova, Together AI, and others.\n\ud83d\ude80 Scalable & Reliable : Built for high availability and low-latency performance in production environments.\n\ud83d\udd27 Developer-Friendly : Simple requests, fast responses, and a consistent developer experience across Python and JavaScript clients.\n\ud83d\udc77 Easy to integrate : Drop-in replacement for the OpenAI chat completions API.\n\ud83d\udcb0 Cost-Effective : No extra markup on provider rates.\n"
+      },
+      {
+        "heading": "Getting Started",
+        "content": "Inference Providers works with your existing development workflow. Whether you prefer Python, JavaScript, or direct HTTP calls, we provide native SDKs and OpenAI-compatible APIs to get you up and running quickly.\nWe\u2019ll walk through a practical example using openai/gpt-oss-120b , a state-of-the-art open-weights conversational model.\n"
+      },
+      {
+        "heading": "Inference Playground",
+        "content": "Before diving into integration, explore models interactively with our Inference Playground . Test different chat completion models with your prompts and compare responses to find the perfect fit for your use case.\n"
+      },
+      {
+        "heading": "Authentication",
+        "content": "You\u2019ll need a Hugging Face token to authenticate your requests. Create one by visiting your token settings and generating a fine-grained token with Make calls to Inference Providers permissions.\nfine-grained\nMake calls to Inference Providers\nFor complete token management details, see our security tokens guide .\n"
+      },
+      {
+        "heading": "Quick Start - LLM",
+        "content": "Let\u2019s start with the most common use case: conversational AI using large language models. This section demonstrates how to perform chat completions using DeepSeek V3, showcasing the different ways you can integrate Inference Providers into your applications.\nWhether you prefer our native clients, want OpenAI compatibility, or need direct HTTP access, we\u2019ll show you how to get up and running with just a few lines of code.\nHere are three ways to integrate Inference Providers into your Python applications, from high-level convenience to low-level control:\nFor convenience, the huggingface_hub library provides an InferenceClient that automatically handles provider selection and request routing.\nhuggingface_hub\nInferenceClient\nIn your terminal, install the Hugging Face Hub Python client and log in:\npip install huggingface_hub\nhf auth login # get a read token from hf.co/settings/tokens\nYou can now use the client with a Python interpreter.\nBy default, our system automatically selects the fastest available provider for the specified model (equivalent to the :fastest policy \u2014 highest throughput in tokens per second).\n:fastest\nYou can change the provider selection policy by appending a policy suffix to the model id: :cheapest for the most cost-efficient provider (lowest price per output token), or :preferred to follow your preference order in Inference Provider settings . For example, openai/gpt-oss-120b:cheapest .\n:cheapest\n:preferred\nopenai/gpt-oss-120b:cheapest\nYou can also select the provider of your choice by appending the provider name to the model id (e.g. \"openai/gpt-oss-120b:sambanova\" ).\n\"openai/gpt-oss-120b:sambanova\"\nimport os from huggingface_hub import InferenceClient\n\nclient = InferenceClient()\n\ncompletion = client.chat.completions.create(\n    model= \"openai/gpt-oss-120b\" ,\n    messages=[\n        { \"role\" : \"user\" , \"content\" : \"How many 'G's in 'huggingface'?\" }\n    ],\n) print (completion.choices[ 0 ].message)\nIntegrate Inference Providers into your JavaScript applications with these flexible approaches:\nOur JavaScript SDK provides a convenient interface with automatic provider selection and TypeScript support.\nInstall with NPM:\nnpm install @huggingface/inference\nThen use the client with Javascript.\nBy default, our system automatically selects the fastest available provider for the specified model (equivalent to the :fastest policy \u2014 highest throughput in tokens per second).\n:fastest\nYou can change the provider selection policy by appending a policy suffix to the model id: :cheapest for the most cost-efficient provider (lowest price per output token), or :preferred to follow your preference order in Inference Provider settings . For example, openai/gpt-oss-120b:cheapest .\n:cheapest\n:preferred\nopenai/gpt-oss-120b:cheapest\nYou can also select the provider of your choice by appending the provider name to the model id (e.g. \"openai/gpt-oss-120b:sambanova\" ).\n\"openai/gpt-oss-120b:sambanova\"\nimport { InferenceClient } from \"@huggingface/inference\" ; const client = new InferenceClient (process. env . HF_TOKEN ); const chatCompletion = await client. chatCompletion ({ model : \"openai/gpt-oss-120b:fastest\" , messages : [\n    { role : \"user\" , content : \"How many 'G's in 'huggingface'?\" ,\n    },\n  ],\n}); console . log (chatCompletion. choices [ 0 ]. message );\nFor testing, debugging, or integrating with any HTTP client, here\u2019s the raw REST API format.\nBy default, our system automatically selects the fastest available provider for the specified model (equivalent to the :fastest policy \u2014 highest throughput in tokens per second).\n:fastest\nYou can change the provider selection policy by appending a policy suffix to the model id: :cheapest for the most cost-efficient provider (lowest price per output token), or :preferred to follow your preference order in Inference Provider settings . For example, openai/gpt-oss-120b:cheapest .\n:cheapest\n:preferred\nopenai/gpt-oss-120b:cheapest\nYou can also select the provider of your choice by appending the provider name to the model id (e.g. \"openai/gpt-oss-120b:sambanova\" ).\n\"openai/gpt-oss-120b:sambanova\"\ncurl https://router.huggingface.co/v1/chat/completions \\\n    -H \"Authorization: Bearer $HF_TOKEN \" \\\n    -H 'Content-Type: application/json' \\\n    -d '{\n        \"messages\": [\n            {\n                \"role\": \"user\",\n                \"content\": \"How many G in huggingface?\"\n            }\n        ],\n        \"model\": \"openai/gpt-oss-120b:fastest\",\n        \"stream\": false\n    }'\n"
+      },
+      {
+        "heading": "Quick Start - Text-to-Image Generation",
+        "content": "Let\u2019s explore how to generate images from text prompts using Inference Providers. We\u2019ll use black-forest-labs/FLUX.1-dev , a state-of-the-art diffusion model that produces highly detailed, photorealistic images.\nUse the huggingface_hub library for the simplest image generation experience with automatic provider selection:\nhuggingface_hub\nimport os from huggingface_hub import InferenceClient\n\nclient = InferenceClient(api_key=os.environ[ \"HF_TOKEN\" ])\n\nimage = client.text_to_image(\n    prompt= \"A serene lake surrounded by mountains at sunset, photorealistic style\" ,\n    model= \"black-forest-labs/FLUX.1-dev\" ) # Save the generated image image.save( \"generated_image.png\" )\nUse our JavaScript SDK for streamlined image generation with TypeScript support:\nimport { InferenceClient } from \"@huggingface/inference\" ; import fs from \"fs\" ; const client = new InferenceClient (process. env . HF_TOKEN ); const imageBlob = await client. textToImage ({ model : \"black-forest-labs/FLUX.1-dev\" , inputs : \"A serene lake surrounded by mountains at sunset, photorealistic style\" ,\n}); // Save the image const buffer = Buffer . from ( await imageBlob. arrayBuffer ());\nfs. writeFileSync ( \"generated_image.png\" , buffer);\n"
+      },
+      {
+        "heading": "Provider Selection",
+        "content": "The Inference Providers API acts as a unified proxy layer that sits between your application and multiple AI providers. Understanding how provider selection works is crucial for optimizing performance, cost, and reliability in your applications.\n"
+      },
+      {
+        "heading": "API as a Proxy Service",
+        "content": "When using Inference Providers, your requests go through Hugging Face\u2019s proxy infrastructure, which provides several key benefits:\nUnified Authentication & Billing : Use a single Hugging Face token for all providers\nAutomatic Failover : When using automatic provider selection ( provider=\"auto\" ), requests are automatically routed to alternative providers if the primary provider is flagged as unavailable by our validation system\nprovider=\"auto\"\nConsistent Interface through client libraries : When using our client libraries, the same request format works across different providers\nBecause the API acts as a proxy, the exact HTTP request may vary between providers as each provider has their own API requirements and response formats. When using our official client libraries (JavaScript or Python), these provider-specific differences are handled automatically whether you use provider=\"auto\" or specify a particular provider.\nprovider=\"auto\"\n"
+      },
+      {
+        "heading": "Client-Side Provider Selection (Inference Clients)",
+        "content": "When using the Hugging Face inference clients (JavaScript or Python), you can explicitly specify a provider or let the system choose automatically. The client then formats the HTTP request to match the selected provider\u2019s API requirements.\nimport { InferenceClient } from \"@huggingface/inference\" ; const client = new InferenceClient (process. env . HF_TOKEN ); // Explicit provider selection await client. chatCompletion ({ model : \"deepseek-ai/DeepSeek-R1\" , provider : \"sambanova\" , // Specific provider messages : [{ role : \"user\" , content : \"Hello!\" }],\n}); // Automatic provider selection (default: \"auto\") await client. chatCompletion ({ model : \"deepseek-ai/DeepSeek-R1\" , // Defaults to \"auto\" selection of the provider // provider=\"auto\", messages : [{ role : \"user\" , content : \"Hello!\" }],\n});\nProvider Selection Policy:\nprovider: \"auto\" (default): Selects the first available provider for the model, sorted by your preference order in Inference Provider settings .\nprovider: \"auto\"\nprovider: \"specific-provider\" : Forces use of a specific provider (e.g., \u201ctogether\u201d, \u201creplicate\u201d, \u201cfal-ai\u201d, \u2026).\nprovider: \"specific-provider\"\n"
+      },
+      {
+        "heading": "Alternative: OpenAI-Compatible Chat Completions Endpoint (Chat Only)",
+        "content": "If you prefer to work with familiar OpenAI APIs or want to migrate existing chat completion code with minimal changes, we offer a drop-in compatible endpoint that handles all provider selection automatically on the server side.\nBy default, the fastest available provider is selected for the model (highest throughput in tokens per second). This is equivalent to appending :fastest to the model name.\nYou can change that policy by adding a suffix to the model name:\n:fastest\n:cheapest selects the most cost-efficient provider for the model (lowest price per output tokens)\n:cheapest\n:preferred selects the first available provider sorted by your preference order in Inference Provider settings\n:preferred\nNote : This OpenAI-compatible endpoint is currently available for chat completion tasks only. For other tasks like text-to-image, embeddings, or speech processing, use the Hugging Face inference clients shown above.\nimport { OpenAI } from \"openai\" ; const client = new OpenAI ({ baseURL : \"https://router.huggingface.co/v1\" , apiKey : process. env . HF_TOKEN ,\n}); const completion = await client. chat . completions . create ({ model : \"deepseek-ai/DeepSeek-R1:fastest\" , messages : [{ role : \"user\" , content : \"Hello!\" }],\n});\nThis endpoint can also be requested through direct HTTP access, making it suitable for integration with various HTTP clients and applications that need to interact with the chat completion service directly.\ncurl https://router.huggingface.co/v1/chat/completions \\\n  -H \"Authorization: Bearer $HF_TOKEN \" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"model\": \"deepseek-ai/DeepSeek-R1:fastest\",\n    \"messages\": [\n      {\n        \"role\": \"user\",\n        \"content\": \"Hello!\"\n      }\n    ]\n  }'\nKey Features:\nServer-Side Provider Selection : The server automatically selects the fastest available provider by default ( :fastest policy)\n:fastest\nModel Listing : GET /v1/models returns available models across all providers\n/v1/models\nOpenAI SDK Compatibility : Works with existing OpenAI client libraries\nChat Tasks Only : Limited to conversational workloads\n"
+      },
+      {
+        "heading": "Choosing the Right Approach",
+        "content": "Use Inference Clients when:\nYou need support for all task types (text-to-image, speech, embeddings, etc.)\nYou want explicit control over provider selection\nYou\u2019re building applications that use multiple AI tasks\nUse OpenAI-Compatible Endpoint when:\nYou\u2019re only doing chat completions\nYou want to migrate existing OpenAI-based code with minimal changes\nYou prefer server-side provider management\nUse Direct HTTP when:\nYou\u2019re implementing custom request logic\nYou need fine-grained control over the request/response cycle\nYou\u2019re working in environments without available client libraries\n"
+      },
+      {
+        "heading": "Next Steps",
+        "content": "Now that you understand the basics, explore these resources to make the most of Inference Providers:\nAnnouncement Blog Post : Learn more about the launch of Inference Providers\nPricing and Billing : Understand costs and billing of Inference Providers\nHub Integration : Learn how Inference Providers are integrated with the Hugging Face Hub\nRegister as a Provider : Requirements to join our partner network as a provider\nHub API : Advanced API features and configuration\nAPI Reference : Complete parameter documentation for all supported tasks\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/inference-endpoints",
+    "title": "Inference Endpoints (dedicated)",
+    "sections": [
+      {
+        "heading": "Inference Endpoints (dedicated)",
+        "content": "Inference Endpoints (dedicated) documentation\nInference Endpoints\n"
+      },
+      {
+        "heading": "Inference Endpoints (dedicated)",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Inference Endpoints",
+        "content": "Inference Endpoints is a managed service to deploy your AI model to production.\nHere you\u2019ll find quickstarts, guides, tutorials, use cases and a lot more.\n"
+      },
+      {
+        "heading": "\ud83d\udd25 Quickstart",
+        "content": "Deploy a production ready AI model in minutes.\n"
+      },
+      {
+        "heading": "\ud83d\udd0d How Inference Endpoints Works",
+        "content": "Understand the main components and benefits of Inference Endpoints.\n"
+      },
+      {
+        "heading": "\ud83d\udcd6 Guides",
+        "content": "Explore our guides to learn how to configure or enable specific features on the platform.\n"
+      },
+      {
+        "heading": "\ud83e\uddd1\u200d\ud83d\udcbb Tutorials",
+        "content": "Step-by-step guides on common developer scenarios.\n"
+      },
+      {
+        "heading": "Why use Inference Endpoints",
+        "content": "Inference Endpoints makes deploying AI models to production a smooth experience. Instead of spending weeks configuring infrastructure, managing servers, and debugging deployment issues, you can focus on what matters most: your model and your users.\nOur platform eliminates the complexity of AI infrastructure while providing enterprise-grade features that scale with your business needs. Whether you\u2019re a startup launching your first AI product or an enterprise team managing hundreds of models, Inference Endpoints provides the reliability, performance, and cost-efficiency you need.\nKey benefits include:\n\u2b07\ufe0f Reduce operational overhead : Eliminate the need for dedicated DevOps teams and infrastructure management, letting you focus on innovation.\n\ud83d\ude80 Scale with confidence : Handle traffic spikes automatically without worrying about capacity planning or performance degradation.\n\u2b07\ufe0f Lower total cost of ownership : Avoid the hidden costs of self-managed infrastructure including maintenance, monitoring, and security compliance.\n\ud83d\udcbb Future-proof your AI stack : Stay current with the latest frameworks and optimizations without managing complex upgrades.\n\ud83d\udd25 Focus on what matters : Spend your time improving your models and building great user experiences, not managing servers.\n"
+      },
+      {
+        "heading": "Key Features",
+        "content": "\ud83d\udce6 Fully managed infrastructure : you don\u2019t need to worry about things like kubernetes, CUDA versions and configuring VPNs. Inference Endpoints deals with this under the hood so you can focus on deploying your model and serving customers as fast as possible.\n\u2195\ufe0f Autoscaling : as there\u2019s more traffic to your model you\u2019ll need more firepower as well. Your Inference Endpoint scales up as traffic increases and down as it decreases to save you on unnecessary compute cost.\n\ud83d\udc40 Observability : understand and debug what\u2019s going on in your model through logs & metrics.\n\ud83d\udd25 Integrated support for open-source Inference Engines : Whether you want to deploy your model with vLLM, TGI or a custom container, we got you!\n\ud83e\udd17 Seamless integration with the Hugging Face Hub : Downloading model weights fast and with the correct security policies is paramount when bringing an AI model to production. With Inference Endpoints, it\u2019s easy and safe.\n"
+      },
+      {
+        "heading": "Further Reading",
+        "content": "If you\u2019re considering using Inference Endpoints in production, read these two case studies:\nWhy we\u2019re switching to Hugging Face Inference Endpoints, and maybe you should too\nInvesting in Performance: Fine-tune small models with LLM insights - a CFM case study\nYou might also find these blogs helpful:\n\ud83e\udd17 LLM suggestions in Argilla with HuggingFace Inference Endpoints\nProgrammatically manage Inference Endpoints\nTGI Multi-LoRA: Deploy Once, Serve 30 models\nLlama 3.1 - 405B, 70B & 8B with multilinguality and long context\nDeploy MusicGen in no time with Inference Endpoints\nOr try out the Quick Start !\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/sagemaker",
+    "title": "Deploying on AWS",
+    "sections": [
+      {
+        "heading": "Deploying on AWS",
+        "content": "Deploying on AWS documentation\nHugging Face on AWS\n"
+      },
+      {
+        "heading": "Deploying on AWS",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Hugging Face on AWS",
+        "content": "\nHugging Face partners with Amazon Web Services (AWS) to democratize artificial intelligence (AI), enabling developers to seamlessly build, train, and deploy state-of-the-art machine learning models using AWS\u2019s robust cloud infrastructure. \u200b\nThis collaboration aims to offer developers access to an everyday growing catalog of pre-trained models and dataset from the Hugging Face Hub, using Hugging Face open-source libraries across a broad spectrum of AWS services and hardware platforms.\nWe build new experiences for developers to seamlessly train and deploy Hugging Face models whether they use AWS AI platforms such as Amazon SageMaker AI and AWS Bedrock, or AWS Compute services such as Elastic Container Service (ECS), Elastic Kubernetes Service (EKS), and virtual servers on Amazon Elastic Compute Cloud (EC2).\nWe develop new tools to simplify the adoption of custom AI accelerators like AWS Inferentia and AWS Trainium, designed to enhance the performance and cost-efficiency of machine learning workloads.\nBy combining Hugging Face\u2019s open-source models and libraries with AWS\u2019s scalable and secure cloud services, developers can more easily and affordably incorporate advanced AI capabilities into their applications.\n[!WARNING][SageMaker Python SDK v3 has been recently released]( https://github.com/aws/sagemaker-python-sdk ), so unless specified otherwise, all the documentation and tutorials are still using the SageMaker Python SDK v2 . We are actively working on updating all the tutorials and examples, but in the meantime make sure to install the SageMaker SDK as pip install \"sagemaker<3.0.0\" .\npip install \"sagemaker<3.0.0\"\n"
+      },
+      {
+        "heading": "Deploy models on AWS",
+        "content": "Deploying Hugging Face models on AWS is streamlined through various services, each suited for different deployment scenarios. Here\u2019s how you can deploy your models using AWS and Hugging Face offerings.\nYou can deploy any Hugging Face Model on AWS with:\nAmazon Sagemaker SDK\nAmazon Sagemaker Jumpstart\nAWS Bedrock\nHugging Face Inference Endpoints\nECS, EKS, and EC2\n"
+      },
+      {
+        "heading": "Deploy with Sagemaker SDK",
+        "content": "Amazon SageMaker is a fully managed AWS service for building, training, and deploying machine learning models at scale. The SageMaker SDK simplifies interacting with SageMaker programmatically. Amazon SageMaker SDK provides a seamless integration specifically designed for Hugging Face models, simplifying the deployment process of managed endpoints. With this integration, you can quickly deploy pre-trained Hugging Face models or your own fine-tuned models directly into SageMaker-managed endpoints, significantly reducing setup complexity and time to production.\nSagemaker SDK Quickstart\n"
+      },
+      {
+        "heading": "Deploy with Sagemaker Jumpstart",
+        "content": "Amazon SageMaker JumpStart is a curated model catalog from which you can deploy a model with just a few clicks. We maintain a Hugging Face section in the catalog that will let you self-host the most famous open models in your VPC with performant default configurations, powered under the hood by Hugging Face Deep Learning Catalogs (DLCs) .\nSagemaker Jumpstart Quickstart\n"
+      },
+      {
+        "heading": "Deploy with AWS Bedrock",
+        "content": "Amazon Bedrock enables developers to easily build and scale generative AI applications through a single API. With Bedrock Marketplace, you can now combine the ease of use of SageMaker JumpStart with the fully managed infrastructure of Amazon Bedrock, including compatibility with high-level APIs such as Agents, Knowledge Bases, Guardrails and Model Evaluations.\nAWS Bedrock Quickstart\n"
+      },
+      {
+        "heading": "Deploy with Hugging Face Inference Endpoints",
+        "content": "Hugging Face Inference Endpoints allow you to deploy models hosted directly by Hugging Face, fully managed and optimized for performance. It\u2019s ideal for quick deployment and scalable inference workloads.\nHugging Face Inference Endpoints Quickstart .\n"
+      },
+      {
+        "heading": "Deploy with ECS, EKS, and EC2",
+        "content": "Hugging Face provides Inference Deep Learning Containers (DLCs) to AWS users, optimized environments preconfigured with Hugging Face libraries for inference, natively integrated in SageMaker SDK and JumpStart. However, the HF DLCs can also be used across other AWS services like ECS, EKS, and EC2.\nAWS Elastic Container Service (ECS), Elastic Kubernetes Service (EKS), and Elastic Compute Cloud (EC2) allow you to leverage DLCs directly.\nEC2, ECS and EKS Quickstart\n"
+      },
+      {
+        "heading": "Train models on AWS",
+        "content": "Training Hugging Face models on AWS is streamlined through various services. Here\u2019s how you can fine-tune your models using AWS and Hugging Face offerings.\nYou can fine-tune any Hugging Face Model on AWS with:\nAmazon Sagemaker SDK\nECS, EKS, and EC2\n"
+      },
+      {
+        "heading": "Train with Sagemaker SDK",
+        "content": "Amazon SageMaker is a fully managed AWS service for building, training, and deploying machine learning models at scale. The SageMaker SDK simplifies interacting with SageMaker programmatically. Amazon SageMaker SDK provides a seamless integration specifically designed for Hugging Face models, simplifying the training job management. With this integration, you can quickly create your own fine-tuned models, significantly reducing setup complexity and time to production.\nSagemaker SDK Quickstart\n"
+      },
+      {
+        "heading": "Train with ECS, EKS, and EC2",
+        "content": "Hugging Face provides Training Deep Learning Containers (DLCs) to AWS users, optimized environments preconfigured with Hugging Face libraries for training, natively integrated in SageMaker SDK. However, the HF DLCs can also be used across other AWS services like ECS, EKS, and EC2.\nAWS Elastic Container Service (ECS), Elastic Kubernetes Service (EKS), and Elastic Compute Cloud (EC2) allow you to leverage DLCs directly.\nEC2, ECS and EKS Quickstart\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/text-generation-inference",
+    "title": "text-generation-inference",
+    "sections": [
+      {
+        "heading": "text-generation-inference",
+        "content": "text-generation-inference documentation\nText Generation Inference\n"
+      },
+      {
+        "heading": "text-generation-inference",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Text Generation Inference",
+        "content": "text-generation-inference is now in maintenance mode. Going forward, we will accept pull requests for minor bug fixes, documentation improvements and lightweight maintenance tasks.\nTGI has initiated the movement for optimized inference engines to rely on a transformers model architectures. This approach is now adopted by downstream inference engines, which we contribute to and recommend using going forward: vllm , SGLang , as well as local engines with inter-compatibility such as llama.cpp or MLX.\ntransformers\nText Generation Inference (TGI) is a toolkit for deploying and serving Large Language Models (LLMs). TGI enables high-performance text generation for the most popular open-source LLMs, including Llama, Falcon, StarCoder, BLOOM, GPT-NeoX, and T5.\n\nText Generation Inference implements many optimizations and features, such as:\nSimple launcher to serve most popular LLMs\nProduction ready (distributed tracing with Open Telemetry, Prometheus metrics)\nTensor Parallelism for faster inference on multiple GPUs\nToken streaming using Server-Sent Events (SSE)\nContinuous batching of incoming requests for increased total throughput\nOptimized transformers code for inference using Flash Attention and Paged Attention on the most popular architectures\nQuantization with bitsandbytes and GPT-Q\nSafetensors weight loading\nWatermarking with A Watermark for Large Language Models\nLogits warper (temperature scaling, top-p, top-k, repetition penalty)\nStop sequences\nLog probabilities\nFine-tuning Support: Utilize fine-tuned models for specific tasks to achieve higher accuracy and performance.\nGuidance : Enable function calling and tool-use by forcing the model to generate structured outputs based on your own predefined output schemas.\nText Generation Inference is used in production by multiple projects, such as:\nHugging Chat , an open-source interface for open-access models, such as Open Assistant and Llama\nOpenAssistant , an open-source community effort to train LLMs in the open\nnat.dev , a playground to explore and compare LLMs.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/text-embeddings-inference",
+    "title": "text-embeddings-inference",
+    "sections": [
+      {
+        "heading": "text-embeddings-inference",
+        "content": "text-embeddings-inference documentation\nText Embeddings Inference\n"
+      },
+      {
+        "heading": "text-embeddings-inference",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Text Embeddings Inference",
+        "content": "Text Embeddings Inference (TEI) is a comprehensive toolkit designed for efficient deployment and serving of open source\ntext embeddings models. It enables high-performance extraction for the most popular models, including FlagEmbedding, Ember, GTE, and E5.\nTEI offers multiple features tailored to optimize the deployment process and enhance overall performance.\nKey Features:\nStreamlined Deployment: TEI eliminates the need for a model graph compilation step for an easier deployment process.\nEfficient Resource Utilization: Benefit from small Docker images and rapid boot times, allowing for true serverless capabilities.\nDynamic Batching: TEI incorporates token-based dynamic batching thus optimizing resource utilization during inference.\nOptimized Inference: TEI leverages Flash Attention , Candle , and cuBLASLt by using optimized transformers code for inference.\nSafetensors weight loading: TEI loads Safetensors weights for faster boot times.\nProduction-Ready: TEI supports distributed tracing through Open Telemetry and exports Prometheus metrics.\nBenchmarks\nBenchmark for BAAI/bge-base-en-v1.5 on an NVIDIA A10 with a sequence length of 512 tokens:\n\n\nGetting Started:\nTo start using TEI, check the Quick Tour guide.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/microsoft-azure",
+    "title": "Microsoft Azure",
+    "sections": [
+      {
+        "heading": "Microsoft Azure",
+        "content": "Microsoft Azure documentation\nHugging Face on Microsoft Azure\n"
+      },
+      {
+        "heading": "Microsoft Azure",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Hugging Face on Microsoft Azure",
+        "content": "\nHugging Face collaborates with Microsoft Azure across open science, open source, and cloud, to enable companies to build their own AI with the latest open models from Hugging Face and the latest infrastructure features from Microsoft Azure.\nHugging Face enables new experiences for Microsoft Azure customers, allowing them to deploy models on their Microsoft Azure infrastructure directly from the Hugging Face Hub via one-click deployments in a secure and scalable way, as well as from either the Microsoft Foundry or the Azure Machine Learning model catalog, or even programmatically via the Azure CLI or the Python SDK.\nThis collaboration aims to offer developers access to an everyday growing catalog of open-source models from the Hugging Face Hub, using Hugging Face open-source libraries across a broad spectrum of Microsoft Azure services and hardware platforms.\nBy combining Hugging Face\u2019s open-source models, libraries and solutions with Microsoft Azure\u2019s scalable and secure cloud services, developers can more easily and affordably incorporate advanced AI capabilities into their applications.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/google-cloud",
+    "title": "Google Cloud",
+    "sections": [
+      {
+        "heading": "Google Cloud",
+        "content": "Google Cloud documentation\nHugging Face on Google Cloud\n"
+      },
+      {
+        "heading": "Google Cloud",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Hugging Face on Google Cloud",
+        "content": "\nHugging Face collaborates with Google across open science, open source, cloud, and hardware to enable companies to build their own AI with the latest open models from Hugging Face and the latest cloud and hardware features from Google Cloud.\nHugging Face enables new experiences for Google Cloud customers. They can easily train and deploy Hugging Face models on Google Kubernetes Engine (GKE), Vertex AI, or Cloud Run on any hardware available in Google Cloud using Hugging Face Deep Learning Containers (DLCs).\nIf you have any issues using Hugging Face on Google Cloud, you can get community support by creating a new topic in the Forum dedicated to Google Cloud usage.\n"
+      },
+      {
+        "heading": "Train and Deploy Models on Google Cloud with Hugging Face Deep Learning Containers",
+        "content": "Hugging Face built Deep Learning Containers (DLCs) for Google Cloud customers to run any of their machine learning workload in an optimized environment, with no configuration or maintenance on their part. These are Docker images pre-installed with deep learning frameworks and libraries such as \ud83e\udd17 Transformers, \ud83e\udd17 Datasets, and \ud83e\udd17 Tokenizers. The DLCs allow you to directly serve and train any models, skipping the complicated process of building and optimizing your serving and training environments from scratch.\nFor training, our DLCs are available for PyTorch via \ud83e\udd17 Transformers. They include support for training on both GPUs and TPUs with libraries such as \ud83e\udd17 TRL, Sentence Transformers, or \ud83e\udde8 Diffusers.\nFor inference, we have a general-purpose PyTorch inference DLC, for serving models trained with any of those frameworks mentioned before on both CPU and GPU. There is also the Text Generation Inference (TGI) DLC for high-performance text generation of LLMs on both GPU and TPU. Finally, there is a Text Embeddings Inference (TEI) DLC for high-performance serving of embedding models on both CPU and GPU.\nThe DLCs are hosted in Google Cloud Artifact Registry and can be used from any Google Cloud service such as Google Kubernetes Engine (GKE), Vertex AI, or Cloud Run.\nHugging Face DLCs are open source and licensed under Apache 2.0 within the Google-Cloud-Containers repository. For premium support, our Expert Support Program gives you direct dedicated support from our team.\nYou have two options to take advantage of these DLCs as a Google Cloud customer:\nTo get started , you can use our no-code integrations within Vertex AI or GKE.\nFor more advanced scenarios, you can pull the containers from the Google Cloud Artifact Registry directly in your environment. Here is a list of notebooks examples.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/transformers",
+    "title": "Transformers",
+    "sections": [
+      {
+        "heading": "Transformers",
+        "content": "Transformers documentation\nTransformers\n"
+      },
+      {
+        "heading": "Transformers",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "",
+        "content": "Transformers acts as the model-definition framework for state-of-the-art machine learning models in text, computer\nvision, audio, video, and multimodal models, for both inference and training.\nIt centralizes the model definition so that this definition is agreed upon across the ecosystem. transformers is the\npivot across frameworks: if a model definition is supported, it will be compatible with the majority of training\nframeworks (Axolotl, Unsloth, DeepSpeed, FSDP, PyTorch-Lightning, \u2026), inference engines (vLLM, SGLang, TGI, \u2026),\nand adjacent modeling libraries (llama.cpp, mlx, \u2026) which leverage the model definition from transformers .\ntransformers\ntransformers\nWe pledge to help support new state-of-the-art models and democratize their usage by having their model definition be\nsimple, customizable, and efficient.\nThere are over 1M+ Transformers model checkpoints on the Hugging Face Hub you can use.\nExplore the Hub today to find a model and use Transformers to help you get started right away.\nExplore the Models Timeline to discover the latest text, vision, audio and multimodal model architectures in Transformers.\n"
+      },
+      {
+        "heading": "Features",
+        "content": "Transformers provides everything you need for inference or training with state-of-the-art pretrained models. Some of the main features include:\nPipeline : Simple and optimized inference class for many machine learning tasks like text generation, image segmentation, automatic speech recognition, document question answering, and more.\nTrainer : A comprehensive trainer that supports features such as mixed precision, torch.compile, and FlashAttention for training and distributed training for PyTorch models.\ngenerate : Fast text generation with large language models (LLMs) and vision language models (VLMs), including support for streaming and multiple decoding strategies.\n"
+      },
+      {
+        "heading": "Design",
+        "content": "Read our Philosophy to learn more about Transformers\u2019 design principles.\nTransformers is designed for developers and machine learning engineers and researchers. Its main design principles are:\nFast and easy to use: Every model is implemented from only three main classes (configuration, model, and preprocessor) and can be quickly used for inference or training with Pipeline or Trainer .\nPretrained models: Reduce your carbon footprint, compute cost and time by using a pretrained model instead of training an entirely new one. Each pretrained model is reproduced as closely as possible to the original model and offers state-of-the-art performance.\n"
+      },
+      {
+        "heading": "Learn",
+        "content": "If you\u2019re new to Transformers or want to learn more about transformer models, we recommend starting with the LLM course . This comprehensive course covers everything from the fundamentals of how transformer models work to practical applications across various tasks. You\u2019ll learn the complete workflow, from curating high-quality datasets to fine-tuning large language models and implementing reasoning capabilities. The course contains both theoretical and hands-on exercises to build a solid foundational knowledge of transformer models as you learn.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/diffusers",
+    "title": "Diffusers",
+    "sections": [
+      {
+        "heading": "Diffusers",
+        "content": "Diffusers documentation\nDiffusers\n"
+      },
+      {
+        "heading": "Diffusers",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n\n"
+      },
+      {
+        "heading": "Diffusers",
+        "content": "Diffusers is a library of state-of-the-art pretrained diffusion models for generating videos, images, and audio.\nThe library revolves around the DiffusionPipeline , an API designed for:\neasy inference with only a few lines of code\nflexibility to mix-and-match pipeline components (models, schedulers)\nloading and using adapters like LoRA\nDiffusers also comes with optimizations - such as offloading and quantization - to ensure even the largest models are accessible on memory-constrained devices. If memory is not an issue, Diffusers supports torch.compile to boost inference speed.\nGet started right away with a Diffusers model on the Hub today!\n"
+      },
+      {
+        "heading": "Learn",
+        "content": "If you\u2019re a beginner, we recommend starting with the Hugging Face Diffusion Models Course . You\u2019ll learn the theory behind diffusion models, and learn how to use the Diffusers library to generate images, fine-tune your own models, and more.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/datasets",
+    "title": "Datasets",
+    "sections": [
+      {
+        "heading": "Datasets",
+        "content": "Datasets documentation\nDatasets\n"
+      },
+      {
+        "heading": "Datasets",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Datasets",
+        "content": "\ud83e\udd17 Datasets is a library for easily accessing and sharing AI datasets for Audio, Computer Vision, and Natural Language Processing (NLP) tasks.\nLoad a dataset in a single line of code, and use our powerful data processing and streaming methods to quickly get your dataset ready for training in a deep learning model. Backed by the Apache Arrow format, process large datasets with zero-copy reads without any memory constraints for optimal speed and efficiency. We also feature a deep integration with the Hugging Face Hub , allowing you to easily load and share a dataset with the wider machine learning community.\nFind your dataset today on the Hugging Face Hub , and take an in-depth look inside of it with the live viewer.\nLearn the basics and become familiar with loading, accessing, and processing a dataset. Start here if you are using \ud83e\udd17 Datasets for the first time!\nPractical guides to help you achieve a specific goal. Take a look at these guides to learn how to use \ud83e\udd17 Datasets to solve real-world problems.\nHigh-level explanations for building a better understanding about important topics such as the underlying data format, the cache, and how datasets are generated.\nTechnical descriptions of how \ud83e\udd17 Datasets classes and methods work.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/transformers.js",
+    "title": "Transformers.js",
+    "sections": [
+      {
+        "heading": "Transformers.js",
+        "content": "Transformers.js documentation\nTransformers.js\n"
+      },
+      {
+        "heading": "Transformers.js",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "State-of-the-art Machine Learning for the Web",
+        "content": "State-of-the-art Machine Learning for the Web\nRun \ud83e\udd17 Transformers directly in your browser, with no need for a server!\nTransformers.js is designed to be functionally equivalent to Hugging Face\u2019s transformers python library, meaning you can run the same pretrained models using a very similar API. These models support common tasks in different modalities, such as:\n\ud83d\udcdd Natural Language Processing : text classification, named entity recognition, question answering, language modeling, summarization, translation, multiple choice, and text generation.\n\ud83d\uddbc\ufe0f Computer Vision : image classification, object detection, segmentation, and depth estimation.\n\ud83d\udde3\ufe0f Audio : automatic speech recognition, audio classification, and text-to-speech.\n\ud83d\udc19 Multimodal : embeddings, zero-shot audio classification, zero-shot image classification, and zero-shot object detection.\nTransformers.js uses ONNX Runtime to run models in the browser. The best part about it, is that you can easily convert your pretrained PyTorch, TensorFlow, or JAX models to ONNX using \ud83e\udd17 Optimum .\nFor more information, check out the full documentation .\n"
+      },
+      {
+        "heading": "Quick tour",
+        "content": "It\u2019s super simple to translate from existing code! Just like the python library, we support the pipeline API. Pipelines group together a pretrained model with preprocessing of inputs and postprocessing of outputs, making it the easiest way to run models with the library.\npipeline\nfrom transformers import pipeline # Allocate a pipeline for sentiment-analysis pipe = pipeline( 'sentiment-analysis' )\n\nout = pipe( 'I love transformers!' ) # [{'label': 'POSITIVE', 'score': 0.999806941}]\nimport { pipeline } from '@huggingface/transformers' ; // Allocate a pipeline for sentiment-analysis const pipe = await pipeline ( 'sentiment-analysis' ); const out = await pipe ( 'I love transformers!' ); // [{'label': 'POSITIVE', 'score': 0.999817686}]\nYou can also use a different model by specifying the model id or path as the second argument to the pipeline function. For example:\npipeline\n// Use a different model for sentiment-analysis const pipe = await pipeline ( 'sentiment-analysis' , 'Xenova/bert-base-multilingual-uncased-sentiment' );\nBy default, when running in the browser, the model will be run on your CPU (via WASM). If you would like\nto run the model on your GPU (via WebGPU), you can do this by setting device: 'webgpu' , for example:\ndevice: 'webgpu'\n// Run the model on WebGPU const pipe = await pipeline ( 'sentiment-analysis' , 'Xenova/distilbert-base-uncased-finetuned-sst-2-english' , { device : 'webgpu' ,\n});\nFor more information, check out the WebGPU guide .\nThe WebGPU API is still experimental in many browsers, so if you run into any issues,\nplease file a bug report .\nIn resource-constrained environments, such as web browsers, it is advisable to use a quantized version of\nthe model to lower bandwidth and optimize performance. This can be achieved by adjusting the dtype option,\nwhich allows you to select the appropriate data type for your model. While the available options may vary\ndepending on the specific model, typical choices include \"fp32\" (default for WebGPU), \"fp16\" , \"q8\" (default for WASM), and \"q4\" . For more information, check out the quantization guide .\ndtype\n\"fp32\"\n\"fp16\"\n\"q8\"\n\"q4\"\n// Run the model at 4-bit quantization const pipe = await pipeline ( 'sentiment-analysis' , 'Xenova/distilbert-base-uncased-finetuned-sst-2-english' , { dtype : 'q4' ,\n});\nReady to dive in? Explore our wide variety of demo applications and templates here . You can also launch your own project instantly using the official Transformers.js template on Hugging Face!\n"
+      },
+      {
+        "heading": "Contents",
+        "content": "The documentation is organized into 5 sections:\nGET STARTED provides a quick tour of the library and installation instructions to get up and running.\nTUTORIALS are a great place to start if you\u2019re a beginner! We also include sample applications for you to play around with!\nDEVELOPER GUIDES show you how to use the library to achieve a specific goal.\nINTEGRATIONS show you how to use Transformers.js with other popular libraries and frameworks.\nAPI REFERENCE describes all classes and functions, as well as their available parameters and types.\n"
+      },
+      {
+        "heading": "Supported tasks/models",
+        "content": "Here is the list of all tasks and architectures currently supported by Transformers.js.\nIf you don\u2019t see your task/model listed here or it is not yet supported, feel free\nto open up a feature request here .\nTo find compatible models on the Hub, select the \u201ctransformers.js\u201d library tag in the filter menu (or visit this link ).\nYou can refine your search by selecting the task you\u2019re interested in (e.g., text-classification ).\n"
+      },
+      {
+        "heading": "Tasks",
+        "content": "fill-mask\nquestion-answering\nsentence-similarity\nsummarization\ntable-question-answering\ntext-classification\nsentiment-analysis\ntext-generation\ntext2text-generation\ntoken-classification\nner\ntranslation\nzero-shot-classification\nfeature-extraction\nbackground-removal\ndepth-estimation\nimage-classification\nimage-segmentation\nimage-to-image\nmask-generation\nobject-detection\nimage-feature-extraction\naudio-classification\nautomatic-speech-recognition\ntext-to-speech\ntext-to-audio\ndocument-question-answering\nimage-to-text\ntext-to-image\nvisual-question-answering\nzero-shot-audio-classification\nzero-shot-image-classification\nzero-shot-object-detection\n"
+      },
+      {
+        "heading": "Models",
+        "content": "AFMoE (from Arcee AI, Prime Intellect, and DatologyAI) released with the paper Arcee Trinity Large Technical Report , by Varun Singh, Lucas Krauss, Sami Jaghouar, Matej Sirovatka, Charles Goddard, Fares Obied, Jack Min Ong, Jannik Straube, Fern, Aria Harley, Conner Stewart, Colin Kealty, Maziyar Panahi, Simon Kirsten, Anushka Deshpande, Anneketh Vij, Arthur Bresnu, Pranav Veldurthi, Raghav Ravishankar, Hardik Bishnoi, Mark McQuade, Johannes Hagemann, Lucas Atkins.\nALBERT (from Google Research and the Toyota Technological Institute at Chicago) released with the paper ALBERT: A Lite BERT for Self-supervised Learning of Language Representations , by Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, Radu Soricut.\nArcee (from Arcee AI) released with the blog post Announcing Arcee Foundation Models by Fernando Fernandes, Varun Singh, Charles Goddard, Lucas Atkins, Mark McQuade, Maziyar Panahi, Conner Stewart, Colin Kealty, Raghav Ravishankar, Lucas Krauss, Anneketh Vij, Pranav Veldurthi, Abhishek Thakur, Julien Simon, Scott Zembsch, Benjamin Langer, Aleksiej Cecocho, Maitri Patel.\nAudio Spectrogram Transformer (from MIT) released with the paper AST: Audio Spectrogram Transformer by Yuan Gong, Yu-An Chung, James Glass.\nBART (from Facebook) released with the paper BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension by Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed, Omer Levy, Ves Stoyanov and Luke Zettlemoyer.\nBEiT (from Microsoft) released with the paper BEiT: BERT Pre-Training of Image Transformers by Hangbo Bao, Li Dong, Furu Wei.\nBERT (from Google) released with the paper BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding by Jacob Devlin, Ming-Wei Chang, Kenton Lee and Kristina Toutanova.\nBlenderbot (from Facebook) released with the paper Recipes for building an open-domain chatbot by Stephen Roller, Emily Dinan, Naman Goyal, Da Ju, Mary Williamson, Yinhan Liu, Jing Xu, Myle Ott, Kurt Shuster, Eric M. Smith, Y-Lan Boureau, Jason Weston.\nBlenderbotSmall (from Facebook) released with the paper Recipes for building an open-domain chatbot by Stephen Roller, Emily Dinan, Naman Goyal, Da Ju, Mary Williamson, Yinhan Liu, Jing Xu, Myle Ott, Kurt Shuster, Eric M. Smith, Y-Lan Boureau, Jason Weston.\nBLOOM (from BigScience workshop) released by the BigScience Workshop .\nCamemBERT (from Inria/Facebook/Sorbonne) released with the paper CamemBERT: a Tasty French Language Model by Louis Martin , Benjamin Muller , Pedro Javier Ortiz Su\u00e1rez*, Yoann Dupont, Laurent Romary, \u00c9ric Villemonte de la Clergerie, Djam\u00e9 Seddah and Beno\u00eet Sagot.\nChinese-CLIP (from OFA-Sys) released with the paper Chinese CLIP: Contrastive Vision-Language Pretraining in Chinese by An Yang, Junshu Pan, Junyang Lin, Rui Men, Yichang Zhang, Jingren Zhou, Chang Zhou.\nCLAP (from LAION-AI) released with the paper Large-scale Contrastive Language-Audio Pretraining with Feature Fusion and Keyword-to-Caption Augmentation by Yusong Wu, Ke Chen, Tianyu Zhang, Yuchen Hui, Taylor Berg-Kirkpatrick, Shlomo Dubnov.\nCLIP (from OpenAI) released with the paper Learning Transferable Visual Models From Natural Language Supervision by Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, Ilya Sutskever.\nCLIPSeg (from University of G\u00f6ttingen) released with the paper Image Segmentation Using Text and Image Prompts by Timo L\u00fcddecke and Alexander Ecker.\nCodeGen (from Salesforce) released with the paper A Conversational Paradigm for Program Synthesis by Erik Nijkamp, Bo Pang, Hiroaki Hayashi, Lifu Tu, Huan Wang, Yingbo Zhou, Silvio Savarese, Caiming Xiong.\nCodeLlama (from MetaAI) released with the paper Code Llama: Open Foundation Models for Code by Baptiste Rozi\u00e8re, Jonas Gehring, Fabian Gloeckle, Sten Sootla, Itai Gat, Xiaoqing Ellen Tan, Yossi Adi, Jingyu Liu, Tal Remez, J\u00e9r\u00e9my Rapin, Artyom Kozhevnikov, Ivan Evtimov, Joanna Bitton, Manish Bhatt, Cristian Canton Ferrer, Aaron Grattafiori, Wenhan Xiong, Alexandre D\u00e9fossez, Jade Copet, Faisal Azhar, Hugo Touvron, Louis Martin, Nicolas Usunier, Thomas Scialom, Gabriel Synnaeve.\nCohere (from Cohere) released with the blog post Command-R: Retrieval Augmented Generation at Production Scale by Cohere.\nCohere2 (from Cohere) released with the blog post Introducing Command R7B: Fast and efficient generative AI by Cohere.\nConvBERT (from YituTech) released with the paper ConvBERT: Improving BERT with Span-based Dynamic Convolution by Zihang Jiang, Weihao Yu, Daquan Zhou, Yunpeng Chen, Jiashi Feng, Shuicheng Yan.\nConvNeXT (from Facebook AI) released with the paper A ConvNet for the 2020s by Zhuang Liu, Hanzi Mao, Chao-Yuan Wu, Christoph Feichtenhofer, Trevor Darrell, Saining Xie.\nConvNeXTV2 (from Facebook AI) released with the paper ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders by Sanghyun Woo, Shoubhik Debnath, Ronghang Hu, Xinlei Chen, Zhuang Liu, In So Kweon, Saining Xie.\nD-FINE (from University of Science and Technology of China) released with the paper D-FINE: Redefine Regression Task in DETRs as Fine-grained Distribution Refinement by Yansong Peng, Hebei Li, Peixi Wu, Yueyi Zhang, Xiaoyan Sun, Feng Wu.\nDAC (from Descript) released with the paper Descript Audio Codec: High-Fidelity Audio Compression with Improved RVQGAN by Rithesh Kumar, Prem Seetharaman, Alejandro Luebs, Ishaan Kumar, Kundan Kumar.\nDeBERTa (from Microsoft) released with the paper DeBERTa: Decoding-enhanced BERT with Disentangled Attention by Pengcheng He, Xiaodong Liu, Jianfeng Gao, Weizhu Chen.\nDeBERTa-v2 (from Microsoft) released with the paper DeBERTa: Decoding-enhanced BERT with Disentangled Attention by Pengcheng He, Xiaodong Liu, Jianfeng Gao, Weizhu Chen.\nDecision Transformer (from Berkeley/Facebook/Google) released with the paper Decision Transformer: Reinforcement Learning via Sequence Modeling by Lili Chen, Kevin Lu, Aravind Rajeswaran, Kimin Lee, Aditya Grover, Michael Laskin, Pieter Abbeel, Aravind Srinivas, Igor Mordatch.\nDeiT (from Facebook) released with the paper Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, Herv\u00e9 J\u00e9gou.\nDepth Anything (from University of Hong Kong and TikTok) released with the paper Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data by Lihe Yang, Bingyi Kang, Zilong Huang, Xiaogang Xu, Jiashi Feng, Hengshuang Zhao.\nDepth Pro (from Apple) released with the paper Depth Pro: Sharp Monocular Metric Depth in Less Than a Second by Aleksei Bochkovskii, Ama\u00ebl Delaunoy, Hugo Germain, Marcel Santos, Yichao Zhou, Stephan R. Richter, Vladlen Koltun.\nDETR (from Facebook) released with the paper End-to-End Object Detection with Transformers by Nicolas Carion, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov, Sergey Zagoruyko.\nDINOv2 (from Meta AI) released with the paper DINOv2: Learning Robust Visual Features without Supervision by Maxime Oquab, Timoth\u00e9e Darcet, Th\u00e9o Moutakanni, Huy Vo, Marc Szafraniec, Vasil Khalidov, Pierre Fernandez, Daniel Haziza, Francisco Massa, Alaaeldin El-Nouby, Mahmoud Assran, Nicolas Ballas, Wojciech Galuba, Russell Howes, Po-Yao Huang, Shang-Wen Li, Ishan Misra, Michael Rabbat, Vasu Sharma, Gabriel Synnaeve, Hu Xu, Herv\u00e9 Jegou, Julien Mairal, Patrick Labatut, Armand Joulin, Piotr Bojanowski.\nDINOv2 with Registers (from Meta AI) released with the paper DINOv2 with Registers by Timoth\u00e9e Darcet, Maxime Oquab, Julien Mairal, Piotr Bojanowski.\nDINOv3 (from Meta AI) released with the paper DINOv3 by Oriane Sim\u00e9oni, Huy V. Vo, Maximilian Seitzer, Federico Baldassarre, Maxime Oquab, Cijo Jose, Vasil Khalidov, Marc Szafraniec, Seungeun Yi, Micha\u00ebl Ramamonjisoa, Francisco Massa, Daniel Haziza, Luca Wehrstedt, Jianyuan Wang, Timoth\u00e9e Darcet, Th\u00e9o Moutakanni, Leonel Sentana, Claire Roberts, Andrea Vedaldi, Jamie Tolan, John Brandt, Camille Couprie, Julien Mairal, Herv\u00e9 J\u00e9gou, Patrick Labatut, Piotr Bojanowski.\nDistilBERT (from HuggingFace), released together with the paper DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter by Victor Sanh, Lysandre Debut and Thomas Wolf. The same method has been applied to compress GPT2 into DistilGPT2 , RoBERTa into DistilRoBERTa , Multilingual BERT into DistilmBERT and a German version of DistilBERT.\nDiT (from Microsoft Research) released with the paper DiT: Self-supervised Pre-training for Document Image Transformer by Junlong Li, Yiheng Xu, Tengchao Lv, Lei Cui, Cha Zhang, Furu Wei.\nDonut (from NAVER), released together with the paper OCR-free Document Understanding Transformer by Geewook Kim, Teakgyu Hong, Moonbin Yim, Jeongyeon Nam, Jinyoung Park, Jinyeong Yim, Wonseok Hwang, Sangdoo Yun, Dongyoon Han, Seunghyun Park.\nDPT (from Intel Labs) released with the paper Vision Transformers for Dense Prediction by Ren\u00e9 Ranftl, Alexey Bochkovskiy, Vladlen Koltun.\nEdgeTAM (from Facebook) released with the paper EdgeTAM: On-Device Track Anything Model by Chong Zhou, Chenchen Zhu, Yunyang Xiong, Saksham Suri, Fanyi Xiao, Lemeng Wu, Raghuraman Krishnamoorthi, Bo Dai, Chen Change Loy, Vikas Chandra, Bilge Soran.\nEfficientNet (from Google Brain) released with the paper EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks by Mingxing Tan, Quoc V. Le.\nELECTRA (from Google Research/Stanford University) released with the paper ELECTRA: Pre-training text encoders as discriminators rather than generators by Kevin Clark, Minh-Thang Luong, Quoc V. Le, Christopher D. Manning.\nERNIE-4.5 (from Baidu ERNIE Team) released with the blog post Announcing the Open Source Release of the ERNIE 4.5 Model Family by the Baidu ERNIE Team.\nESM (from Meta AI) are transformer protein language models. ESM-1b was released with the paper Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences by Alexander Rives, Joshua Meier, Tom Sercu, Siddharth Goyal, Zeming Lin, Jason Liu, Demi Guo, Myle Ott, C. Lawrence Zitnick, Jerry Ma, and Rob Fergus. ESM-1v was released with the paper Language models enable zero-shot prediction of the effects of mutations on protein function by Joshua Meier, Roshan Rao, Robert Verkuil, Jason Liu, Tom Sercu and Alexander Rives. ESM-2 and ESMFold were released with the paper Language models of protein sequences at the scale of evolution enable accurate structure prediction by Zeming Lin, Halil Akin, Roshan Rao, Brian Hie, Zhongkai Zhu, Wenting Lu, Allan dos Santos Costa, Maryam Fazel-Zarandi, Tom Sercu, Sal Candido, Alexander Rives.\nEXAONE (from LG AI Research) released with the papers EXAONE 3.0 7.8B Instruction Tuned Language Model and EXAONE 3.5: Series of Large Language Models for Real-world Use Cases by the LG AI Research team.\nFalcon (from Technology Innovation Institute) by Almazrouei, Ebtesam and Alobeidli, Hamza and Alshamsi, Abdulaziz and Cappelli, Alessandro and Cojocaru, Ruxandra and Debbah, Merouane and Goffinet, Etienne and Heslow, Daniel and Launay, Julien and Malartic, Quentin and Noune, Badreddine and Pannier, Baptiste and Penedo, Guilherme.\nFalconH1 (from Technology Innovation Institute) released with the blog post Falcon-H1-Tiny: A series of extremely small, yet powerful language models redefining capabilities at small scale by the Falcon-LLM team.\nFastViT (from Apple) released with the paper FastViT: A Fast Hybrid Vision Transformer using Structural Reparameterization by Pavan Kumar Anasosalu Vasu, James Gabriel, Jeff Zhu, Oncel Tuzel and Anurag Ranjan.\nFLAN-T5 (from Google AI) released in the repository google-research/t5x by Hyung Won Chung, Le Hou, Shayne Longpre, Barret Zoph, Yi Tay, William Fedus, Eric Li, Xuezhi Wang, Mostafa Dehghani, Siddhartha Brahma, Albert Webson, Shixiang Shane Gu, Zhuyun Dai, Mirac Suzgun, Xinyun Chen, Aakanksha Chowdhery, Sharan Narang, Gaurav Mishra, Adams Yu, Vincent Zhao, Yanping Huang, Andrew Dai, Hongkun Yu, Slav Petrov, Ed H. Chi, Jeff Dean, Jacob Devlin, Adam Roberts, Denny Zhou, Quoc V. Le, and Jason Wei\nFlorence2 (from Microsoft) released with the paper Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks by Bin Xiao, Haiping Wu, Weijian Xu, Xiyang Dai, Houdong Hu, Yumao Lu, Michael Zeng, Ce Liu, Lu Yuan.\nGemma (from Google) released with the paper Gemma: Open Models Based on Gemini Technology and Research by the Gemma Google team.\nGemma2 (from Google) released with the paper Gemma2: Open Models Based on Gemini Technology and Research by the Gemma Google team.\nGemma3 (from Google) released with the paper Introducing Gemma 3: The most capable model you can run on a single GPU or TPU by the Gemma Google team.\nGemma3n (from Google) released with the paper Announcing Gemma 3n preview: powerful, efficient, mobile-first AI by the Gemma Google team.\nGLM (from the GLM Team, THUDM & ZhipuAI) released with the paper ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools by Team GLM: Aohan Zeng, Bin Xu, Bowen Wang, Chenhui Zhang, Da Yin, Dan Zhang, Diego Rojas, Guanyu Feng, Hanlin Zhao, Hanyu Lai, Hao Yu, Hongning Wang, Jiadai Sun, Jiajie Zhang, Jiale Cheng, Jiayi Gui, Jie Tang, Jing Zhang, Jingyu Sun, Juanzi Li, Lei Zhao, Lindong Wu, Lucen Zhong, Mingdao Liu, Minlie Huang, Peng Zhang, Qinkai Zheng, Rui Lu, Shuaiqi Duan, Shudan Zhang, Shulin Cao, Shuxun Yang, Weng Lam Tam, Wenyi Zhao, Xiao Liu, Xiao Xia, Xiaohan Zhang, Xiaotao Gu, Xin Lv, Xinghan Liu, Xinyi Liu, Xinyue Yang, Xixuan Song, Xunkai Zhang, Yifan An, Yifan Xu, Yilin Niu, Yuantao Yang, Yueyan Li, Yushi Bai, Yuxiao Dong, Zehan Qi, Zhaoyu Wang, Zhen Yang, Zhengxiao Du, Zhenyu Hou, Zihan Wang.\nGLPN (from KAIST) released with the paper Global-Local Path Networks for Monocular Depth Estimation with Vertical CutDepth by Doyeon Kim, Woonghyun Ga, Pyungwhan Ahn, Donggyu Joo, Sehwan Chun, Junmo Kim.\nGPT Neo (from EleutherAI) released in the repository EleutherAI/gpt-neo by Sid Black, Stella Biderman, Leo Gao, Phil Wang and Connor Leahy.\nGPT NeoX (from EleutherAI) released with the paper GPT-NeoX-20B: An Open-Source Autoregressive Language Model by Sid Black, Stella Biderman, Eric Hallahan, Quentin Anthony, Leo Gao, Laurence Golding, Horace He, Connor Leahy, Kyle McDonell, Jason Phang, Michael Pieler, USVSN Sai Prashanth, Shivanshu Purohit, Laria Reynolds, Jonathan Tow, Ben Wang, Samuel Weinbach\nGPT OSS (from OpenAI) released with the blog Introducing gpt-oss by Sandhini Agarwal, Lama Ahmad, Jason Ai, Sam Altman, Andy Applebaum, Edwin Arbus, Rahul K. Arora, Yu Bai, Bowen Baker, Haiming Bao, Boaz Barak, Ally Bennett, Tyler Bertao, Nivedita Brett, Eugene Brevdo, Greg Brockman, Sebastien Bubeck, Che Chang, Kai Chen, Mark Chen, Enoch Cheung, Aidan Clark, Dan Cook, Marat Dukhan, Casey Dvorak, Kevin Fives, Vlad Fomenko, Timur Garipov, Kristian Georgiev, Mia Glaese, Tarun Gogineni, Adam Goucher, Lukas Gross, Katia Gil Guzman, John Hallman, Jackie Hehir, Johannes Heidecke, Alec Helyar, Haitang Hu, Romain Huet, Jacob Huh, Saachi Jain, Zach Johnson, Chris Koch, Irina Kofman, Dominik Kundel, Jason Kwon, Volodymyr Kyrylov, Elaine Ya Le, Guillaume Leclerc, James Park Lennon, Scott Lessans, Mario Lezcano-Casado, Yuanzhi Li, Zhuohan Li, Ji Lin, Jordan Liss, Lily (Xiaoxuan) Liu, Jiancheng Liu, Kevin Lu, Chris Lu, Zoran Martinovic, Lindsay McCallum, Josh McGrath, Scott McKinney, Aidan McLaughlin, Song Mei, Steve Mostovoy, Tong Mu, Gideon Myles, Alexander Neitz, Alex Nichol, Jakub Pachocki, Alex Paino, Dana Palmie, Ashley Pantuliano, Giambattista Parascandolo, Jongsoo Park, Leher Pathak, Carolina Paz, Ludovic Peran, Dmitry Pimenov, Michelle Pokrass, Elizabeth Proehl, Huida Qiu, Gaby Raila, Filippo Raso, Hongyu Ren, Kimmy Richardson, David Robinson, Bob Rotsted, Hadi Salman, Suvansh Sanjeev, Max Schwarzer, D. Sculley, Harshit Sikchi, Kendal Simon, Karan Singhal, Yang Song, Dane Stuckey, Zhiqing Sun, Philippe Tillet, Sam Toizer, Foivos Tsimpourlas, Nikhil Vyas, Eric Wallace, Xin Wang, Miles Wang, Olivia Watkins, Kevin Weil, Amy Wendling, Kevin Whinnery, Cedric Whitney, Hannah Wong, Lin Yang, Yu Yang, Michihiro Yasunaga, Kristen Ying, Wojciech Zaremba, Wenting Zhan, Cyril Zhang, Brian Zhang, Eddie Zhang, Shengjia Zhao.\nGPT-2 (from OpenAI) released with the paper Language Models are Unsupervised Multitask Learners by Alec Radford , Jeffrey Wu , Rewon Child, David Luan, Dario Amodei and Ilya Sutskever .\nGPT-J (from EleutherAI) released in the repository kingoflolz/mesh-transformer-jax by Ben Wang and Aran Komatsuzaki.\nGPTBigCode (from BigCode) released with the paper SantaCoder: don\u2019t reach for the stars! by Loubna Ben Allal, Raymond Li, Denis Kocetkov, Chenghao Mou, Christopher Akiki, Carlos Munoz Ferrandis, Niklas Muennighoff, Mayank Mishra, Alex Gu, Manan Dey, Logesh Kumar Umapathi, Carolyn Jane Anderson, Yangtian Zi, Joel Lamy Poirier, Hailey Schoelkopf, Sergey Troshin, Dmitry Abulkhanov, Manuel Romero, Michael Lappert, Francesco De Toni, Bernardo Garc\u00eda del R\u00edo, Qian Liu, Shamik Bose, Urvashi Bhattacharyya, Terry Yue Zhuo, Ian Yu, Paulo Villegas, Marco Zocca, Sourab Mangrulkar, David Lansky, Huu Nguyen, Danish Contractor, Luis Villa, Jia Li, Dzmitry Bahdanau, Yacine Jernite, Sean Hughes, Daniel Fried, Arjun Guha, Harm de Vries, Leandro von Werra.\nGranite (from IBM) released with the paper Power Scheduler: A Batch Size and Token Number Agnostic Learning Rate Scheduler by Yikang Shen, Matthew Stallone, Mayank Mishra, Gaoyuan Zhang, Shawn Tan, Aditya Prasad, Adriana Meza Soria, David D. Cox, Rameswar Panda.\nGraniteMoeHybrid (from IBM) released with the blog post IBM Granite 4.0: hyper-efficient, high performance hybrid models for enterprise by the IBM Granite team.\nGrounding DINO (from IDEA-Research) released with the paper Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection by Shilong Liu, Zhaoyang Zeng, Tianhe Ren, Feng Li, Hao Zhang, Jie Yang, Qing Jiang, Chunyuan Li, Jianwei Yang, Hang Su, Jun Zhu, Lei Zhang.\nGroupViT (from UCSD, NVIDIA) released with the paper GroupViT: Semantic Segmentation Emerges from Text Supervision by Jiarui Xu, Shalini De Mello, Sifei Liu, Wonmin Byeon, Thomas Breuel, Jan Kautz, Xiaolong Wang.\nHelium (from the Kyutai Team) released with the blog post Announcing Helium-1 Preview by the Kyutai Team.\nHerBERT (from Allegro.pl, AGH University of Science and Technology) released with the paper KLEJ: Comprehensive Benchmark for Polish Language Understanding by Piotr Rybak, Robert Mroczkowski, Janusz Tracz, Ireneusz Gawlik.\nHiera (from Meta) released with the paper Hiera: A Hierarchical Vision Transformer without the Bells-and-Whistles by Chaitanya Ryali, Yuan-Ting Hu, Daniel Bolya, Chen Wei, Haoqi Fan, Po-Yao Huang, Vaibhav Aggarwal, Arkabandhu Chowdhury, Omid Poursaeed, Judy Hoffman, Jitendra Malik, Yanghao Li, Christoph Feichtenhofer.\nHubert (from Facebook) released with the paper HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units by Wei-Ning Hsu, Benjamin Bolte, Yao-Hung Hubert Tsai, Kushal Lakhotia, Ruslan Salakhutdinov, Abdelrahman Mohamed.\nHunYuanDenseV1 (from Tencent) released with the paper Hunyuan-Large: An Open-Source MoE Model with 52 Billion Activated Parameters by Tencent by the Tencent team.\nI-JEPA (from Meta) released with the paper Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture by Mahmoud Assran, Quentin Duval, Ishan Misra, Piotr Bojanowski, Pascal Vincent, Michael Rabbat, Yann LeCun, Nicolas Ballas.\nIdefics3 (from Hugging Face) released with the paper Building and better understanding vision-language models: insights and future directions by Hugo Lauren\u00e7on, Andr\u00e9s Marafioti, Victor Sanh, L\u00e9o Tronchon.\nJAIS (from Core42) released with the paper Jais and Jais-chat: Arabic-Centric Foundation and Instruction-Tuned Open Generative Large Language Models by Neha Sengupta, Sunil Kumar Sahu, Bokang Jia, Satheesh Katipomu, Haonan Li, Fajri Koto, William Marshall, Gurpreet Gosal, Cynthia Liu, Zhiming Chen, Osama Mohammed Afzal, Samta Kamboj, Onkar Pandit, Rahul Pal, Lalit Pradhan, Zain Muhammad Mujahid, Massa Baali, Xudong Han, Sondos Mahmoud Bsharat, Alham Fikri Aji, Zhiqiang Shen, Zhengzhong Liu, Natalia Vassilieva, Joel Hestness, Andy Hock, Andrew Feldman, Jonathan Lee, Andrew Jackson, Hector Xuguang Ren, Preslav Nakov, Timothy Baldwin, Eric Xing.\nJanus (from DeepSeek) released with the paper Janus: Decoupling Visual Encoding for Unified Multimodal Understanding and Generation Chengyue Wu, Xiaokang Chen, Zhiyu Wu, Yiyang Ma, Xingchao Liu, Zizheng Pan, Wen Liu, Zhenda Xie, Xingkai Yu, Chong Ruan, Ping Luo.\nJinaCLIP (from Jina AI) released with the paper Jina CLIP: Your CLIP Model Is Also Your Text Retriever by Andreas Koukounas, Georgios Mastrapas, Michael G\u00fcnther, Bo Wang, Scott Martens, Isabelle Mohr, Saba Sturua, Mohammad Kalim Akram, Joan Fontanals Mart\u00ednez, Saahil Ognawala, Susana Guzman, Maximilian Werk, Nan Wang, Han Xiao.\nLiteWhisper (from University of Washington, Kotoba Technologies) released with the paper LiteASR: Efficient Automatic Speech Recognition with Low-Rank Approximation by Keisuke Kamahori, Jungo Kasai, Noriyuki Kojima, Baris Kasikci.\nLongT5 (from Google AI) released with the paper LongT5: Efficient Text-To-Text Transformer for Long Sequences by Mandy Guo, Joshua Ainslie, David Uthus, Santiago Ontanon, Jianmo Ni, Yun-Hsuan Sung, Yinfei Yang.\nLFM2 (from Liquid AI) released with the blog post Introducing LFM2: The Fastest On-Device Foundation Models on the Market by the Liquid AI Team.\nLfm2Moe (from Liquid AI) released with the blog post LFM2-8B-A1B: An Efficient On-device Mixture-of-Experts by the Liquid AI Team.\nLLaMA (from The FAIR team of Meta AI) released with the paper LLaMA: Open and Efficient Foundation Language Models by Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timoth\u00e9e Lacroix, Baptiste Rozi\u00e8re, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave, Guillaume Lample.\nLlama2 (from The FAIR team of Meta AI) released with the paper Llama2: Open Foundation and Fine-Tuned Chat Models by Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, Dan Bikel, Lukas Blecher, Cristian Canton Ferrer, Moya Chen, Guillem Cucurull, David Esiobu, Jude Fernandes, Jeremy Fu, Wenyin Fu, Brian Fuller, Cynthia Gao, Vedanuj Goswami, Naman Goyal, Anthony Hartshorn, Saghar Hosseini, Rui Hou, Hakan Inan, Marcin Kardas, Viktor Kerkez Madian Khabsa, Isabel Kloumann, Artem Korenev, Punit Singh Koura, Marie-Anne Lachaux, Thibaut Lavril, Jenya Lee, Diana Liskovich, Yinghai Lu, Yuning Mao, Xavier Martinet, Todor Mihaylov, Pushka rMishra, Igor Molybog, Yixin Nie, Andrew Poulton, Jeremy Reizenstein, Rashi Rungta, Kalyan Saladi, Alan Schelten, Ruan Silva, Eric Michael Smith, Ranjan Subramanian, Xiaoqing EllenTan, Binh Tang, Ross Taylor, Adina Williams, Jian Xiang Kuan, Puxin Xu, Zheng Yan, Iliyan Zarov, Yuchen Zhang, Angela Fan, Melanie Kambadur, Sharan Narang, Aurelien Rodriguez, Robert Stojnic, Sergey Edunov, Thomas Scialom.\nLlama3 (from The FAIR team of Meta AI) released with the paper The Llama 3 Herd of Models by the Llama Team at Meta.\nLlama4 (from The FAIR team of Meta AI) released with the blog post The Llama 4 herd: The beginning of a new era of natively multimodal AI innovation by the Llama Team at Meta.\nLLaVa (from Microsoft Research & University of Wisconsin-Madison) released with the paper Visual Instruction Tuning by Haotian Liu, Chunyuan Li, Yuheng Li and Yong Jae Lee.\nLLaVA-OneVision (from ByteDance & NTU & CUHK & HKUST) released with the paper LLaVA-OneVision: Easy Visual Task Transfer by Bo Li, Yuanhan Zhang, Dong Guo, Renrui Zhang, Feng Li, Hao Zhang, Kaichen Zhang, Yanwei Li, Ziwei Liu, Chunyuan Li\nM2M100 (from Facebook) released with the paper Beyond English-Centric Multilingual Machine Translation by Angela Fan, Shruti Bhosale, Holger Schwenk, Zhiyi Ma, Ahmed El-Kishky, Siddharth Goyal, Mandeep Baines, Onur Celebi, Guillaume Wenzek, Vishrav Chaudhary, Naman Goyal, Tom Birch, Vitaliy Liptchinsky, Sergey Edunov, Edouard Grave, Michael Auli, Armand Joulin.\nMarianMT Machine translation models trained using OPUS data by J\u00f6rg Tiedemann. The Marian Framework is being developed by the Microsoft Translator Team.\nMaskFormer (from Meta and UIUC) released with the paper Per-Pixel Classification is Not All You Need for Semantic Segmentation by Bowen Cheng, Alexander G. Schwing, Alexander Kirillov.\nmBART (from Facebook) released with the paper Multilingual Denoising Pre-training for Neural Machine Translation by Yinhan Liu, Jiatao Gu, Naman Goyal, Xian Li, Sergey Edunov, Marjan Ghazvininejad, Mike Lewis, Luke Zettlemoyer.\nmBART-50 (from Facebook) released with the paper Multilingual Translation with Extensible Multilingual Pretraining and Finetuning by Yuqing Tang, Chau Tran, Xian Li, Peng-Jen Chen, Naman Goyal, Vishrav Chaudhary, Jiatao Gu, Angela Fan.\nMetric3D released with the paper Metric3D: Towards Zero-shot Metric 3D Prediction from A Single Image by Wei Yin, Chi Zhang, Hao Chen, Zhipeng Cai, Gang Yu, Kaixuan Wang, Xiaozhi Chen, Chunhua Shen.\nMetric3Dv2 released with the paper Metric3Dv2: A Versatile Monocular Geometric Foundation Model for Zero-shot Metric Depth and Surface Normal Estimation by Mu Hu, Wei Yin, Chi Zhang, Zhipeng Cai, Xiaoxiao Long, Kaixuan Wang, Hao Chen, Gang Yu, Chunhua Shen, Shaojie Shen.\nMusicGen (from Meta) released with the paper Simple and Controllable Music Generation by Jade Copet, Felix Kreuk, Itai Gat, Tal Remez, David Kant, Gabriel Synnaeve, Yossi Adi and Alexandre D\u00e9fossez.\nMGP-STR (from Alibaba Research) released with the paper Multi-Granularity Prediction for Scene Text Recognition by Peng Wang, Cheng Da, and Cong Yao.\nMimi (from Kyutai) released with the paper Moshi: a speech-text foundation model for real-time dialogue by Alexandre D\u00e9fossez, Laurent Mazar\u00e9, Manu Orsini, Am\u00e9lie Royer, Patrick P\u00e9rez, Herv\u00e9 J\u00e9gou, Edouard Grave and Neil Zeghidour.\nMinistral (from Mistral AI) by The Mistral AI team.\nMinistral3 (from Mistral AI) by The Mistral AI team.\nMistral (from Mistral AI) by The Mistral AI team: Albert Jiang, Alexandre Sablayrolles, Arthur Mensch, Chris Bamford, Devendra Singh Chaplot, Diego de las Casas, Florian Bressand, Gianna Lengyel, Guillaume Lample, L\u00e9lio Renard Lavaud, Lucile Saulnier, Marie-Anne Lachaux, Pierre Stock, Teven Le Scao, Thibaut Lavril, Thomas Wang, Timoth\u00e9e Lacroix, William El Sayed.\nMistral3 (from Mistral AI) by The Mistral AI team.\nMMS (from Facebook) released with the paper Scaling Speech Technology to 1,000+ Languages by Vineel Pratap, Andros Tjandra, Bowen Shi, Paden Tomasello, Arun Babu, Sayani Kundu, Ali Elkahky, Zhaoheng Ni, Apoorv Vyas, Maryam Fazel-Zarandi, Alexei Baevski, Yossi Adi, Xiaohui Zhang, Wei-Ning Hsu, Alexis Conneau, Michael Auli.\nMobileBERT (from CMU/Google Brain) released with the paper MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices by Zhiqing Sun, Hongkun Yu, Xiaodan Song, Renjie Liu, Yiming Yang, and Denny Zhou.\nMobileCLIP (from Apple) released with the paper MobileCLIP: Fast Image-Text Models through Multi-Modal Reinforced Training by Pavan Kumar Anasosalu Vasu, Hadi Pouransari, Fartash Faghri, Raviteja Vemulapalli, Oncel Tuzel.\nMobileLLM (from Meta) released with the paper MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases by Zechun Liu, Changsheng Zhao, Forrest Iandola, Chen Lai, Yuandong Tian, Igor Fedorov, Yunyang Xiong, Ernie Chang, Yangyang Shi, Raghuraman Krishnamoorthi, Liangzhen Lai, Vikas Chandra.\nMobileNetV1 (from Google Inc.) released with the paper MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications by Andrew G. Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, Hartwig Adam.\nMobileNetV2 (from Google Inc.) released with the paper MobileNetV2: Inverted Residuals and Linear Bottlenecks by Mark Sandler, Andrew Howard, Menglong Zhu, Andrey Zhmoginov, Liang-Chieh Chen.\nMobileNetV3 (from Google Inc.) released with the paper Searching for MobileNetV3 by Andrew Howard, Mark Sandler, Grace Chu, Liang-Chieh Chen, Bo Chen, Mingxing Tan, Weijun Wang, Yukun Zhu, Ruoming Pang, Vijay Vasudevan, Quoc V. Le, Hartwig Adam.\nMobileNetV4 (from Google Inc.) released with the paper MobileNetV4 - Universal Models for the Mobile Ecosystem by Danfeng Qin, Chas Leichner, Manolis Delakis, Marco Fornoni, Shixin Luo, Fan Yang, Weijun Wang, Colby Banbury, Chengxi Ye, Berkin Akin, Vaibhav Aggarwal, Tenghui Zhu, Daniele Moro, Andrew Howard.\nMobileViT (from Apple) released with the paper MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer by Sachin Mehta and Mohammad Rastegari.\nMobileViTV2 (from Apple) released with the paper Separable Self-attention for Mobile Vision Transformers by Sachin Mehta and Mohammad Rastegari.\nModernBERT (from Answer.AI and LightOn) released with the paper Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference by Benjamin Warner, Antoine Chaffin, Benjamin Clavi\u00e9, Orion Weller, Oskar Hallstr\u00f6m, Said Taghadouini, Alexis Gallagher, Raja Biswas, Faisal Ladhak, Tom Aarsen, Nathan Cooper, Griffin Adams, Jeremy Howard, Iacopo Poli.\nModernBERT Decoder (from Johns Hopkins University and LightOn) released with the paper Seq vs Seq: An Open Suite of Paired Encoders and Decoders by Orion Weller, Kathryn Ricci, Marc Marone, Antoine Chaffin, Dawn Lawrie, Benjamin Van Durme.\nMoondream1 released in the repository moondream by vikhyat.\nMoonshine (from Useful Sensors) released with the paper Moonshine: Speech Recognition for Live Transcription and Voice Commands by Nat Jeffries, Evan King, Manjunath Kudlur, Guy Nicholson, James Wang, Pete Warden.\nMPNet (from Microsoft Research) released with the paper MPNet: Masked and Permuted Pre-training for Language Understanding by Kaitao Song, Xu Tan, Tao Qin, Jianfeng Lu, Tie-Yan Liu.\nMPT (from MosaicML) released with the repository llm-foundry by the MosaicML NLP Team.\nMT5 (from Google AI) released with the paper mT5: A massively multilingual pre-trained text-to-text transformer by Linting Xue, Noah Constant, Adam Roberts, Mihir Kale, Rami Al-Rfou, Aditya Siddhant, Aditya Barua, Colin Raffel.\nNanoChat released with the repository nanochat: The best ChatGPT that $100 can buy by Andrej Karpathy.\nNeoBERT (from Chandar Research Lab) released with the paper NeoBERT: A Next-Generation BERT by Lola Le Breton, Quentin Fournier, Mariam El Mezouar, John X. Morris, Sarath Chandar.\nNLLB (from Meta) released with the paper No Language Left Behind: Scaling Human-Centered Machine Translation by the NLLB team.\nNougat (from Meta AI) released with the paper Nougat: Neural Optical Understanding for Academic Documents by Lukas Blecher, Guillem Cucurull, Thomas Scialom, Robert Stojnic.\nOLMo (from Ai2) released with the paper OLMo: Accelerating the Science of Language Models by Dirk Groeneveld, Iz Beltagy, Pete Walsh, Akshita Bhagia, Rodney Kinney, Oyvind Tafjord, Ananya Harsh Jha, Hamish Ivison, Ian Magnusson, Yizhong Wang, Shane Arora, David Atkinson, Russell Authur, Khyathi Raghavi Chandu, Arman Cohan, Jennifer Dumas, Yanai Elazar, Yuling Gu, Jack Hessel, Tushar Khot, William Merrill, Jacob Morrison, Niklas Muennighoff, Aakanksha Naik, Crystal Nam, Matthew E. Peters, Valentina Pyatkin, Abhilasha Ravichander, Dustin Schwenk, Saurabh Shah, Will Smith, Emma Strubell, Nishant Subramani, Mitchell Wortsman, Pradeep Dasigi, Nathan Lambert, Kyle Richardson, Luke Zettlemoyer, Jesse Dodge, Kyle Lo, Luca Soldaini, Noah A. Smith, Hannaneh Hajishirzi.\nOLMo2 (from Ai2) released with the blog OLMo 2: The best fully open language model to date by the Ai2 OLMo team.\nOLMo3 (from Ai2) released with the blog Olmo 3: Charting a path through the model flow to lead open-source AI by the Ai2 OLMo team.\nOlmo Hybrid (from Ai2) released with the blog Introducing Olmo Hybrid: Combining transformers and linear RNNs for superior scaling by the Ai2 OLMo team.\nOpenELM (from Apple) released with the paper OpenELM: An Efficient Language Model Family with Open-source Training and Inference Framework by Sachin Mehta, Mohammad Hossein Sekhavat, Qingqing Cao, Maxwell Horton, Yanzi Jin, Chenfan Sun, Iman Mirzadeh, Mahyar Najibi, Dmitry Belenko, Peter Zatloukal, Mohammad Rastegari.\nOPT (from Meta AI) released with the paper OPT: Open Pre-trained Transformer Language Models by Susan Zhang, Stephen Roller, Naman Goyal, Mikel Artetxe, Moya Chen, Shuohui Chen et al.\nOWL-ViT (from Google AI) released with the paper Simple Open-Vocabulary Object Detection with Vision Transformers by Matthias Minderer, Alexey Gritsenko, Austin Stone, Maxim Neumann, Dirk Weissenborn, Alexey Dosovitskiy, Aravindh Mahendran, Anurag Arnab, Mostafa Dehghani, Zhuoran Shen, Xiao Wang, Xiaohua Zhai, Thomas Kipf, and Neil Houlsby.\nOWLv2 (from Google AI) released with the paper Scaling Open-Vocabulary Object Detection by Matthias Minderer, Alexey Gritsenko, Neil Houlsby.\nPaliGemma (from Google) released with the papers PaliGemma: A versatile 3B VLM for transfer and PaliGemma 2: A Family of Versatile VLMs for Transfer by the PaliGemma Google team.\nParakeet (from NVIDIA) released with the blog post Introducing the Parakeet ASR family by the NVIDIA NeMo team.\nPatchTSMixer (from IBM) released with the paper TSMixer: Lightweight MLP-Mixer Model for Multivariate Time Series Forecasting by Vijay Ekambaram, Arindam Jati, Nam Nguyen, Phanwadee Sinthong, Jayant Kalagnanam.\nPatchTST (from Princeton University, IBM) released with the paper A Time Series is Worth 64 Words: Long-term Forecasting with Transformers by Yuqi Nie, Nam H. Nguyen, Phanwadee Sinthong, Jayant Kalagnanam.\nPhi (from Microsoft) released with the papers - Textbooks Are All You Need by Suriya Gunasekar, Yi Zhang, Jyoti Aneja, Caio C\u00e9sar Teodoro Mendes, Allie Del Giorno, Sivakanth Gopi, Mojan Javaheripi, Piero Kauffmann, Gustavo de Rosa, Olli Saarikivi, Adil Salim, Shital Shah, Harkirat Singh Behl, Xin Wang, S\u00e9bastien Bubeck, Ronen Eldan, Adam Tauman Kalai, Yin Tat Lee and Yuanzhi Li, Textbooks Are All You Need II: phi-1.5 technical report by Yuanzhi Li, S\u00e9bastien Bubeck, Ronen Eldan, Allie Del Giorno, Suriya Gunasekar and Yin Tat Lee.\nPhi3 (from Microsoft) released with the paper Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone by Marah Abdin, Sam Ade Jacobs, Ammar Ahmad Awan, Jyoti Aneja, Ahmed Awadallah, Hany Awadalla, Nguyen Bach, Amit Bahree, Arash Bakhtiari, Harkirat Behl, Alon Benhaim, Misha Bilenko, Johan Bjorck, S\u00e9bastien Bubeck, Martin Cai, Caio C\u00e9sar Teodoro Mendes, Weizhu Chen, Vishrav Chaudhary, Parul Chopra, Allie Del Giorno, Gustavo de Rosa, Matthew Dixon, Ronen Eldan, Dan Iter, Amit Garg, Abhishek Goswami, Suriya Gunasekar, Emman Haider, Junheng Hao, Russell J. Hewett, Jamie Huynh, Mojan Javaheripi, Xin Jin, Piero Kauffmann, Nikos Karampatziakis, Dongwoo Kim, Mahoud Khademi, Lev Kurilenko, James R. Lee, Yin Tat Lee, Yuanzhi Li, Chen Liang, Weishung Liu, Eric Lin, Zeqi Lin, Piyush Madan, Arindam Mitra, Hardik Modi, Anh Nguyen, Brandon Norick, Barun Patra, Daniel Perez-Becker, Thomas Portet, Reid Pryzant, Heyang Qin, Marko Radmilac, Corby Rosset, Sambudha Roy, Olatunji Ruwase, Olli Saarikivi, Amin Saied, Adil Salim, Michael Santacroce, Shital Shah, Ning Shang, Hiteshi Sharma, Xia Song, Masahiro Tanaka, Xin Wang, Rachel Ward, Guanhua Wang, Philipp Witte, Michael Wyatt, Can Xu, Jiahang Xu, Sonali Yadav, Fan Yang, Ziyi Yang, Donghan Yu, Chengruidong Zhang, Cyril Zhang, Jianwen Zhang, Li Lyna Zhang, Yi Zhang, Yue Zhang, Yunan Zhang, Xiren Zhou.\nPhi3V (from Microsoft) released with the paper Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone by Marah Abdin, Jyoti Aneja, Hany Awadalla, Ahmed Awadallah, Ammar Ahmad Awan, Nguyen Bach, Amit Bahree, Arash Bakhtiari, Jianmin Bao, Harkirat Behl, Alon Benhaim, Misha Bilenko, Johan Bjorck, S\u00e9bastien Bubeck, Martin Cai, Qin Cai, Vishrav Chaudhary, Dong Chen, Dongdong Chen, Weizhu Chen, Yen-Chun Chen, Yi-Ling Chen, Hao Cheng, Parul Chopra, Xiyang Dai, Matthew Dixon, Ronen Eldan, Victor Fragoso, Jianfeng Gao, Mei Gao, Min Gao, Amit Garg, Allie Del Giorno, Abhishek Goswami, Suriya Gunasekar, Emman Haider, Junheng Hao, Russell J. Hewett, Wenxiang Hu, Jamie Huynh, Dan Iter, Sam Ade Jacobs, Mojan Javaheripi, Xin Jin, Nikos Karampatziakis, Piero Kauffmann, Mahoud Khademi, Dongwoo Kim, Young Jin Kim, Lev Kurilenko, James R. Lee, Yin Tat Lee, Yuanzhi Li, Yunsheng Li, Chen Liang, Lars Liden, Xihui Lin, Zeqi Lin, Ce Liu, Liyuan Liu, Mengchen Liu, Weishung Liu, Xiaodong Liu, Chong Luo, Piyush Madan, Ali Mahmoudzadeh, David Majercak, Matt Mazzola, Caio C\u00e9sar Teodoro Mendes, Arindam Mitra, Hardik Modi, Anh Nguyen, Brandon Norick, Barun Patra, Daniel Perez-Becker, Thomas Portet, Reid Pryzant, Heyang Qin, Marko Radmilac, Liliang Ren, Gustavo de Rosa, Corby Rosset, Sambudha Roy, Olatunji Ruwase, Olli Saarikivi, Amin Saied, Adil Salim, Michael Santacroce, Shital Shah, Ning Shang, Hiteshi Sharma, Yelong Shen, Swadheen Shukla, Xia Song, Masahiro Tanaka, Andrea Tupini, Praneetha Vaddamanu, Chunyu Wang, Guanhua Wang, Lijuan Wang , Shuohang Wang, Xin Wang, Yu Wang, Rachel Ward, Wen Wen, Philipp Witte, Haiping Wu, Xiaoxia Wu, Michael Wyatt, Bin Xiao, Can Xu, Jiahang Xu, Weijian Xu, Jilong Xue, Sonali Yadav, Fan Yang, Jianwei Yang, Yifan Yang, Ziyi Yang, Donghan Yu, Lu Yuan, Chenruidong Zhang, Cyril Zhang, Jianwen Zhang, Li Lyna Zhang, Yi Zhang, Yue Zhang, Yunan Zhang, Xiren Zhou.\nPVT (from Nanjing University, The University of Hong Kong etc.) released with the paper Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions by Wenhai Wang, Enze Xie, Xiang Li, Deng-Ping Fan, Kaitao Song, Ding Liang, Tong Lu, Ping Luo, Ling Shao.\nPyAnnote released in the repository pyannote/pyannote-audio by Herv\u00e9 Bredin.\nQwen2 (from the Qwen team, Alibaba Group) released with the papers Qwen Technical Report and Qwen2 Technical Report by Jinze Bai, Shuai Bai, Yunfei Chu, Zeyu Cui, Kai Dang, Xiaodong Deng, Yang Fan, Wenbin Ge, Yu Han, Fei Huang, Binyuan Hui, Luo Ji, Mei Li, Junyang Lin, Runji Lin, Dayiheng Liu, Gao Liu, Chengqiang Lu, Keming Lu, Jianxin Ma, Rui Men, Xingzhang Ren, Xuancheng Ren, Chuanqi Tan, Sinan Tan, Jianhong Tu, Peng Wang, Shijie Wang, Wei Wang, Shengguang Wu, Benfeng Xu, Jin Xu, An Yang, Hao Yang, Jian Yang, Shusheng Yang, Yang Yao, Bowen Yu, Hongyi Yuan, Zheng Yuan, Jianwei Zhang, Xingxuan Zhang, Yichang Zhang, Zhenru Zhang, Chang Zhou, Jingren Zhou, Xiaohuan Zhou and Tianhang Zhu.\nQwen2 MoE (from the Qwen team, Alibaba Group) released with the paper Qwen2 Technical Report by Jinze Bai, Shuai Bai, Yunfei Chu, Zeyu Cui, Kai Dang, Xiaodong Deng, Yang Fan, Wenbin Ge, Yu Han, Fei Huang, Binyuan Hui, Luo Ji, Mei Li, Junyang Lin, Runji Lin, Dayiheng Liu, Gao Liu, Chengqiang Lu, Keming Lu, Jianxin Ma, Rui Men, Xingzhang Ren, Xuancheng Ren, Chuanqi Tan, Sinan Tan, Jianhong Tu, Peng Wang, Shijie Wang, Wei Wang, Shengguang Wu, Benfeng Xu, Jin Xu, An Yang, Hao Yang, Jian Yang, Shusheng Yang, Yang Yao, Bowen Yu, Hongyi Yuan, Zheng Yuan, Jianwei Zhang, Xingxuan Zhang, Yichang Zhang, Zhenru Zhang, Chang Zhou, Jingren Zhou, Xiaohuan Zhou and Tianhang Zhu.\nQwen2-VL (from the Qwen team, Alibaba Group) released with the papers Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond and Qwen2-VL: Enhancing Vision-Language Model\u2019s Perception of the World at Any Resolution by Peng Wang, Shuai Bai, Sinan Tan, Shijie Wang, Zhihao Fan, Jinze Bai, Keqin Chen, Xuejing Liu, Jialin Wang, Wenbin Ge, Yang Fan, Kai Dang, Mengfei Du, Xuancheng Ren, Rui Men, Dayiheng Liu, Chang Zhou, Jingren Zhou, Junyang Lin.\nQwen2.5-VL (from the Qwen team, Alibaba Group) released with the paper Qwen2.5-VL Technical Report by Shuai Bai, Keqin Chen, Xuejing Liu, Jialin Wang, Wenbin Ge, Sibo Song, Kai Dang, Peng Wang, Shijie Wang, Jun Tang, Humen Zhong, Yuanzhi Zhu, Mingkun Yang, Zhaohai Li, Jianqiang Wan, Pengfei Wang, Wei Ding, Zheren Fu, Yiheng Xu, Jiabo Ye, Xi Zhang, Tianbao Xie, Zesen Cheng, Hang Zhang, Zhibo Yang, Haiyang Xu, Junyang Lin.\nQwen3 (from the Qwen team, Alibaba Group) released with the blog post Qwen3: Think Deeper, Act Faster by the Qwen team.\nQwen3 MoE (from the Qwen team, Alibaba Group) released with the blog post Qwen3: Think Deeper, Act Faster by the Qwen team.\nQwen3 Next (from the Qwen team, Alibaba Group) released with the blog post Qwen3-Next: Towards Ultimate Training & Inference Efficiency by the Qwen team.\nQwen3-VL (from the Qwen team, Alibaba Group) released with the paper Qwen3-VL Technical Report by Shuai Bai, Yuxuan Cai, Ruizhe Chen, Keqin Chen, Xionghui Chen, Zesen Cheng, Lianghao Deng, Wei Ding, Chang Gao, Chunjiang Ge, Wenbin Ge, Zhifang Guo, Qidong Huang, Jie Huang, Fei Huang, Binyuan Hui, Shutong Jiang, Zhaohai Li, Mingsheng Li, Mei Li, Kaixin Li, Zicheng Lin, Junyang Lin, Xuejing Liu, Jiawei Liu, Chenglong Liu, Yang Liu, Dayiheng Liu, Shixuan Liu, Dunjie Lu, Ruilin Luo, Chenxu Lv, Rui Men, Lingchen Meng, Xuancheng Ren, Xingzhang Ren, Sibo Song, Yuchong Sun, Jun Tang, Jianhong Tu, Jianqiang Wan, Peng Wang, Pengfei Wang, Qiuyue Wang, Yuxuan Wang, Tianbao Xie, Yiheng Xu, Haiyang Xu, Jin Xu, Zhibo Yang, Mingkun Yang, Jianxin Yang, An Yang, Bowen Yu, Fei Zhang, Hang Zhang, Xi Zhang, Bo Zheng, Humen Zhong, Jingren Zhou, Fan Zhou, Jing Zhou, Yuanzhi Zhu, Ke Zhu.\nQwen3-VL MoE (from the Qwen team, Alibaba Group) released with the paper Qwen3-VL Technical Report by Shuai Bai, Yuxuan Cai, Ruizhe Chen, Keqin Chen, Xionghui Chen, Zesen Cheng, Lianghao Deng, Wei Ding, Chang Gao, Chunjiang Ge, Wenbin Ge, Zhifang Guo, Qidong Huang, Jie Huang, Fei Huang, Binyuan Hui, Shutong Jiang, Zhaohai Li, Mingsheng Li, Mei Li, Kaixin Li, Zicheng Lin, Junyang Lin, Xuejing Liu, Jiawei Liu, Chenglong Liu, Yang Liu, Dayiheng Liu, Shixuan Liu, Dunjie Lu, Ruilin Luo, Chenxu Lv, Rui Men, Lingchen Meng, Xuancheng Ren, Xingzhang Ren, Sibo Song, Yuchong Sun, Jun Tang, Jianhong Tu, Jianqiang Wan, Peng Wang, Pengfei Wang, Qiuyue Wang, Yuxuan Wang, Tianbao Xie, Yiheng Xu, Haiyang Xu, Jin Xu, Zhibo Yang, Mingkun Yang, Jianxin Yang, An Yang, Bowen Yu, Fei Zhang, Hang Zhang, Xi Zhang, Bo Zheng, Humen Zhong, Jingren Zhou, Fan Zhou, Jing Zhou, Yuanzhi Zhu, Ke Zhu.\nQwen3.5 (from the Qwen team, Alibaba Group) released with the blog post Qwen3.5: Towards Native Multimodal Agents by the Qwen team.\nQwen3.5 Moe (from the Qwen team, Alibaba Group) released with the blog post Qwen3.5: Towards Native Multimodal Agents by the Qwen team.\nResNet (from Microsoft Research) released with the paper Deep Residual Learning for Image Recognition by Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.\nRF-DETR (from Roboflow) released with the blog post RF-DETR: A SOTA Real-Time Object Detection Model by Peter Robicheaux, James Gallagher, Joseph Nelson, Isaac Robinson.\nRoBERTa (from Facebook), released together with the paper RoBERTa: A Robustly Optimized BERT Pretraining Approach by Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, Veselin Stoyanov.\nRoFormer (from ZhuiyiTechnology), released together with the paper RoFormer: Enhanced Transformer with Rotary Position Embedding by Jianlin Su and Yu Lu and Shengfeng Pan and Bo Wen and Yunfeng Liu.\nRT-DETR (from Baidu), released together with the paper DETRs Beat YOLOs on Real-time Object Detection by Yian Zhao, Wenyu Lv, Shangliang Xu, Jinman Wei, Guanzhong Wang, Qingqing Dang, Yi Liu, Jie Chen.\nRT-DETRv2 (from Baidu), released together with the paper RT-DETRv2: Improved Baseline with Bag-of-Freebies for Real-Time Detection Transformer by Wenyu Lv, Yian Zhao, Qinyao Chang, Kui Huang, Guanzhong Wang, Yi Liu.\nSapiens (from Meta AI) released with the paper Sapiens: Foundation for Human Vision Models by Rawal Khirodkar, Timur Bagautdinov, Julieta Martinez, Su Zhaoen, Austin James, Peter Selednik, Stuart Anderson, Shunsuke Saito.\nSegFormer (from NVIDIA) released with the paper SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers by Enze Xie, Wenhai Wang, Zhiding Yu, Anima Anandkumar, Jose M. Alvarez, Ping Luo.\nSegment Anything (from Meta AI) released with the paper Segment Anything by Alexander Kirillov, Eric Mintun, Nikhila Ravi, Hanzi Mao, Chloe Rolland, Laura Gustafson, Tete Xiao, Spencer Whitehead, Alex Berg, Wan-Yen Lo, Piotr Dollar, Ross Girshick.\nSegment Anything 2 (from Meta AI) released with the paper SAM 2: Segment Anything in Images and Videos by Nikhila Ravi, Valentin Gabeur, Yuan-Ting Hu, Ronghang Hu, Chaitanya Ryali, Tengyu Ma, Haitham Khedr, Roman R\u00e4dle, Chloe Rolland, Laura Gustafson, Eric Mintun, Junting Pan, Kalyan Vasudev Alwala, Nicolas Carion, Chao-Yuan Wu, Ross Girshick, Piotr Doll\u00e1r, Christoph Feichtenhofer.\nSegment Anything 3 (from Meta Superintelligence Labs) released with the paper SAM 3: Segment Anything with Concepts by SAM 3D Team, Xingyu Chen, Fu-Jen Chu, Pierre Gleize, Kevin J Liang, Alexander Sax, Hao Tang, Weiyao Wang, Michelle Guo, Thibaut Hardin, Xiang Li, Aohan Lin, Jiawei Liu, Ziqi Ma, Anushka Sagar, Bowen Song, Xiaodong Wang, Jianing Yang, Bowen Zhang, Piotr Dollar, Georgia Gkioxari, Matt Feiszli, Jitendra Malik, Nicolas Carion, Laura Gustafson, Yuan-Ting Hu, Shoubhik Debnath, Ronghang Hu, Didac Suris Coll-Vinent, Chaitanya Ryali, Kalyan Vasudev Alwala, Haitham Khedr, Andrew Huang, Jie Lei, Tengyu Ma, Baishan Guo, Arpit Kalla, Markus Marks, Joseph Greer, Meng Wang, Peize Sun, Roman R\u00e4dle, Triantafyllos Afouras, Effrosyni Mavroudi, Katherine Xu, Tsung-Han Wu, Yu Zhou, Liliane Momeni, Rishi Hazra, Shuangrui Ding, Sagar Vaze, Francois Porcher, Feng Li, Siyuan Li, Aishwarya Kamath, Ho Kei Cheng, Piotr Dollar, Nikhila Ravi, Kate Saenko, Pengchuan Zhang, Christoph Feichtenhofer.\nSigLIP (from Google AI) released with the paper Sigmoid Loss for Language Image Pre-Training by Xiaohua Zhai, Basil Mustafa, Alexander Kolesnikov, Lucas Beyer.\n** SmolLM3 (from Hugging Face) released with the blog post SmolLM3: smol, multilingual, long-context reasoner by the Hugging Face TB Research team.\n** SmolVLM (from Hugging Face) released with the blog posts SmolVLM - small yet mighty Vision Language Model and SmolVLM Grows Smaller \u2013 Introducing the 250M & 500M Models! by the Hugging Face TB Research team.\nSNAC (from Papla Media, ETH Zurich) released with the paper SNAC: Multi-Scale Neural Audio Codec by Hubert Siuzdak, Florian Gr\u00f6tschla, Luca A. Lanzend\u00f6rfer.\nSpeechT5 (from Microsoft Research) released with the paper SpeechT5: Unified-Modal Encoder-Decoder Pre-Training for Spoken Language Processing by Junyi Ao, Rui Wang, Long Zhou, Chengyi Wang, Shuo Ren, Yu Wu, Shujie Liu, Tom Ko, Qing Li, Yu Zhang, Zhihua Wei, Yao Qian, Jinyu Li, Furu Wei.\nSqueezeBERT (from Berkeley) released with the paper SqueezeBERT: What can computer vision teach NLP about efficient neural networks? by Forrest N. Iandola, Albert E. Shaw, Ravi Krishna, and Kurt W. Keutzer.\nStableLm (from Stability AI) released with the paper StableLM 3B 4E1T (Technical Report) by Jonathan Tow, Marco Bellagente, Dakota Mahan, Carlos Riquelme Ruiz, Duy Phung, Maksym Zhuravinskyi, Nathan Cooper, Nikhil Pinnaparaju, Reshinth Adithyan, and James Baicoianu.\nStarcoder2 (from BigCode team) released with the paper StarCoder 2 and The Stack v2: The Next Generation by Anton Lozhkov, Raymond Li, Loubna Ben Allal, Federico Cassano, Joel Lamy-Poirier, Nouamane Tazi, Ao Tang, Dmytro Pykhtar, Jiawei Liu, Yuxiang Wei, Tianyang Liu, Max Tian, Denis Kocetkov, Arthur Zucker, Younes Belkada, Zijian Wang, Qian Liu, Dmitry Abulkhanov, Indraneil Paul, Zhuang Li, Wen-Ding Li, Megan Risdal, Jia Li, Jian Zhu, Terry Yue Zhuo, Evgenii Zheltonozhskii, Nii Osae Osae Dade, Wenhao Yu, Lucas Krau\u00df, Naman Jain, Yixuan Su, Xuanli He, Manan Dey, Edoardo Abati, Yekun Chai, Niklas Muennighoff, Xiangru Tang, Muhtasham Oblokulov, Christopher Akiki, Marc Marone, Chenghao Mou, Mayank Mishra, Alex Gu, Binyuan Hui, Tri Dao, Armel Zebaze, Olivier Dehaene, Nicolas Patry, Canwen Xu, Julian McAuley, Han Hu, Torsten Scholak, Sebastien Paquet, Jennifer Robinson, Carolyn Jane Anderson, Nicolas Chapados, Mostofa Patwary, Nima Tajbakhsh, Yacine Jernite, Carlos Mu\u00f1oz Ferrandis, Lingming Zhang, Sean Hughes, Thomas Wolf, Arjun Guha, Leandro von Werra, and Harm de Vries.\nStyleTTS 2 (from Columbia University) released with the paper StyleTTS 2: Towards Human-Level Text-to-Speech through Style Diffusion and Adversarial Training with Large Speech Language Models by Yinghao Aaron Li, Cong Han, Vinay S. Raghavan, Gavin Mischler, Nima Mesgarani.\nSupertonic (from Supertone) released with the paper SupertonicTTS: Towards Highly Efficient and Streamlined Text-to-Speech System by Hyeongju Kim, Jinhyeok Yang, Yechan Yu, Seunghun Ji, Jacob Morton, Frederik Bous, Joon Byun, Juheon Lee.\nSwin Transformer (from Microsoft) released with the paper Swin Transformer: Hierarchical Vision Transformer using Shifted Windows by Ze Liu, Yutong Lin, Yue Cao, Han Hu, Yixuan Wei, Zheng Zhang, Stephen Lin, Baining Guo.\nSwin2SR (from University of W\u00fcrzburg) released with the paper Swin2SR: SwinV2 Transformer for Compressed Image Super-Resolution and Restoration by Marcos V. Conde, Ui-Jin Choi, Maxime Burchi, Radu Timofte.\nT5 (from Google AI) released with the paper Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer by Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu.\nT5v1.1 (from Google AI) released in the repository google-research/text-to-text-transfer-transformer by Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu.\nTable Transformer (from Microsoft Research) released with the paper PubTables-1M: Towards Comprehensive Table Extraction From Unstructured Documents by Brandon Smock, Rohith Pesala, Robin Abraham.\nTrOCR (from Microsoft), released together with the paper TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models by Minghao Li, Tengchao Lv, Lei Cui, Yijuan Lu, Dinei Florencio, Cha Zhang, Zhoujun Li, Furu Wei.\nUltravox (from Fixie.ai) released with the repository fixie-ai/ultravox by the Fixie.ai team.\nUniSpeech (from Microsoft Research) released with the paper UniSpeech: Unified Speech Representation Learning with Labeled and Unlabeled Data by Chengyi Wang, Yu Wu, Yao Qian, Kenichi Kumatani, Shujie Liu, Furu Wei, Michael Zeng, Xuedong Huang.\nUniSpeechSat (from Microsoft Research) released with the paper UNISPEECH-SAT: UNIVERSAL SPEECH REPRESENTATION LEARNING WITH SPEAKER AWARE PRE-TRAINING by Sanyuan Chen, Yu Wu, Chengyi Wang, Zhengyang Chen, Zhuo Chen, Shujie Liu, Jian Wu, Yao Qian, Furu Wei, Jinyu Li, Xiangzhan Yu.\nVaultGemma (from Google) released with the technical report VaultGemma: A Differentially Private Gemma Model by the VaultGemma Google team.\nVision Transformer (ViT) (from Google AI) released with the paper An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale by Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, Neil Houlsby.\nViTMAE (from Meta AI) released with the paper Masked Autoencoders Are Scalable Vision Learners by Kaiming He, Xinlei Chen, Saining Xie, Yanghao Li, Piotr Doll\u00e1r, Ross Girshick.\nViTMatte (from HUST-VL) released with the paper ViTMatte: Boosting Image Matting with Pretrained Plain Vision Transformers by Jingfeng Yao, Xinggang Wang, Shusheng Yang, Baoyuan Wang.\nViTMSN (from Meta AI) released with the paper Masked Siamese Networks for Label-Efficient Learning by Mahmoud Assran, Mathilde Caron, Ishan Misra, Piotr Bojanowski, Florian Bordes, Pascal Vincent, Armand Joulin, Michael Rabbat, Nicolas Ballas.\nViTPose (from The University of Sydney) released with the paper ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation by Yufei Xu, Jing Zhang, Qiming Zhang, Dacheng Tao.\nVITS (from Kakao Enterprise) released with the paper Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech by Jaehyeon Kim, Jungil Kong, Juhee Son.\nVoxtral (from Mistral AI) released with the paper Voxtral by Alexander H. Liu, Andy Ehrenberg, Andy Lo, Cl\u00e9ment Denoix, Corentin Barreau, Guillaume Lample, Jean-Malo Delignon, Khyathi Raghavi Chandu, Patrick von Platen, Pavankumar Reddy Muddireddy, Sanchit Gandhi, Soham Ghosh, Srijan Mishra, Thomas Foubert, Abhinav Rastogi, Adam Yang, Albert Q. Jiang, Alexandre Sablayrolles, Am\u00e9lie H\u00e9liou, Am\u00e9lie Martin, Anmol Agarwal, Antoine Roux, Arthur Darcet, Arthur Mensch, Baptiste Bout, Baptiste Rozi\u00e8re, Baudouin De Monicault, Chris Bamford, Christian Wallenwein, Christophe Renaudin, Cl\u00e9mence Lanfranchi, Darius Dabert, Devendra Singh Chaplot, Devon Mizelle, Diego de las Casas, Elliot Chane-Sane, Emilien Fugier, Emma Bou Hanna, Gabrielle Berrada, Gauthier Delerce, Gauthier Guinet, Georgii Novikov, Guillaume Martin, Himanshu Jaju, Jan Ludziejewski, Jason Rute, Jean-Hadrien Chabran, Jessica Chudnovsky, Joachim Studnia, Joep Barmentlo, Jonas Amar, Josselin Somerville Roberts, Julien Denize, Karan Saxena, Karmesh Yadav, Kartik Khandelwal, Kush Jain, L\u00e9lio Renard Lavaud, L\u00e9onard Blier, Lingxiao Zhao, Louis Martin, Lucile Saulnier, Luyu Gao, Marie Pellat, Mathilde Guillaumin, Mathis Felardos, Matthieu Dinot, Maxime Darrin, Maximilian Augustin, Micka\u00ebl Seznec, Neha Gupta, Nikhil Raghuraman, Olivier Duchenne, Patricia Wang, Patryk Saffer, Paul Jacob, Paul Wambergue, Paula Kurylowicz, Philom\u00e8ne Chagniot, Pierre Stock, Pravesh Agrawal, R\u00e9mi Delacourt, Romain Sauvestre, Roman Soletskyi, Sagar Vaze, Sandeep Subramanian, Saurabh Garg, Shashwat Dalal, Siddharth Gandhi, Sumukh Aithal, Szymon Antoniak, Teven Le Scao, Thibault Schueller, Thibaut Lavril, Thomas Robert, Thomas Wang, Timoth\u00e9e Lacroix, Tom Bewley, Valeriia Nemychnikova, Victor Paltz , Virgile Richard, Wen-Ding Li, William Marshall, Xuanyu Zhang, Yihan Wan, Yunhao Tang.\nWav2Vec2 (from Facebook AI) released with the paper wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations by Alexei Baevski, Henry Zhou, Abdelrahman Mohamed, Michael Auli.\nWav2Vec2-BERT (from Meta AI) released with the paper Seamless: Multilingual Expressive and Streaming Speech Translation by the Seamless Communication team.\nWavLM (from Microsoft Research) released with the paper WavLM: Large-Scale Self-Supervised Pre-Training for Full Stack Speech Processing by Sanyuan Chen, Chengyi Wang, Zhengyang Chen, Yu Wu, Shujie Liu, Zhuo Chen, Jinyu Li, Naoyuki Kanda, Takuya Yoshioka, Xiong Xiao, Jian Wu, Long Zhou, Shuo Ren, Yanmin Qian, Yao Qian, Jian Wu, Michael Zeng, Furu Wei.\nWhisper (from OpenAI) released with the paper Robust Speech Recognition via Large-Scale Weak Supervision by Alec Radford, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, Ilya Sutskever.\nXLM (from Facebook) released together with the paper Cross-lingual Language Model Pretraining by Guillaume Lample and Alexis Conneau.\nXLM-RoBERTa (from Facebook AI), released together with the paper Unsupervised Cross-lingual Representation Learning at Scale by Alexis Conneau , Kartikay Khandelwal , Naman Goyal, Vishrav Chaudhary, Guillaume Wenzek, Francisco Guzm\u00e1n, Edouard Grave, Myle Ott, Luke Zettlemoyer and Veselin Stoyanov.\nYOLOS (from Huazhong University of Science & Technology) released with the paper You Only Look at One Sequence: Rethinking Transformer in Vision through Object Detection by Yuxin Fang, Bencheng Liao, Xinggang Wang, Jiemin Fang, Jiyang Qi, Rui Wu, Jianwei Niu, Wenyu Liu.\nYoutu-LLM (from the Tencent Youtu Team) released with the paper Youtu-LLM: Unlocking the Native Agentic Potential for Lightweight Large Language Models by Junru Lu, Jiarui Qin, Lingfeng Qiao, Yinghui Li, Xinyi Dai, Bo Ke, Jianfeng He, Ruizhi Qiao, Di Yin, Xing Sun, Yunsheng Wu, Yinsong Liu, Shuangyin Liu, Mingkong Tang, Haodong Lin, Jiayi Kuang, Fanxu Meng, Xiaojuan Tang, Yunjia Xi, Junjie Huang, Haotong Yang, Zhenyi Shen, Yangning Li, Qianwen Zhang, Yifei Yu, Siyu An, Junnan Dong, Qiufeng Wang, Jie Wang, Keyu Chen, Wei Wen, Taian Guo, Zhifeng Shen, Daohai Yu, Jiahao Li, Ke Li, Zongyi Li, Xiaoyu Tan.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/tokenizers",
+    "title": "Tokenizers",
+    "sections": [
+      {
+        "heading": "Tokenizers",
+        "content": "Tokenizers documentation\nTokenizers\n"
+      },
+      {
+        "heading": "Tokenizers",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Tokenizers",
+        "content": "Fast State-of-the-art tokenizers, optimized for both research and\nproduction\n\ud83e\udd17 Tokenizers provides an\nimplementation of today\u2019s most used tokenizers, with a focus on\nperformance and versatility. These tokenizers are also used in \ud83e\udd17 Transformers .\n"
+      },
+      {
+        "heading": "Main features:",
+        "content": "Train new vocabularies and tokenize, using today\u2019s most used tokenizers.\nExtremely fast (both training and tokenization), thanks to the Rust implementation. Takes less than 20 seconds to tokenize a GB of text on a server\u2019s CPU.\nEasy to use, but also extremely versatile.\nDesigned for both research and production.\nFull alignment tracking. Even with destructive normalization, it\u2019s always possible to get the part of the original sentence that corresponds to any token.\nDoes all the pre-processing: Truncation, Padding, add the special tokens your model needs.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/evaluate",
+    "title": "Evaluate",
+    "sections": [
+      {
+        "heading": "Evaluate",
+        "content": "Evaluate documentation\nEvaluate on the Hub\n"
+      },
+      {
+        "heading": "Evaluate",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Evaluate on the Hub",
+        "content": "\nYou can evaluate AI models on the Hub in multiple ways and this page will guide you through the different options:\nCommunity Leaderboards bring together the best models for a given task or domain and make them accessible to everyone by ranking them.\nModel Cards provide a comprehensive overview of a model\u2019s capabilities from the author\u2019s perspective.\nLibraries and Packages give you the tools to evaluate your models on the Hub.\n"
+      },
+      {
+        "heading": "Community Leaderboards",
+        "content": "Community leaderboards show how a model performs on a given task or domain. For example, there are leaderboards for question answering, reasoning, classification, vision, and audio. If you\u2019re tackling a new task, you can use a leaderboard to see how a model performs on it.\nHere are some examples of community leaderboards:\nThere are many more leaderboards on the Hub. Check out all the leaderboards via this search or use this dedicated Space to find a leaderboard for your task.\n"
+      },
+      {
+        "heading": "Model Cards",
+        "content": "Model cards provide an overview of a model\u2019s capabilities evaluated by the community or the model\u2019s author. They are a great way to understand a model\u2019s capabilities and limitations.\n\nUnlike leaderboards, model card evaluation scores are often created by the author, rather than by the community.\nFor information on reporting results, see details on the Model Card Evaluation Results metadata .\n"
+      },
+      {
+        "heading": "Libraries and packages",
+        "content": "There are a number of open-source libraries and packages that you can use to evaluate your models on the Hub. These are useful if you want to evaluate a custom model or performance on a custom evaluation task.\n"
+      },
+      {
+        "heading": "LightEval",
+        "content": "LightEval is a library for evaluating LLMs. It is designed to be comprehensive and customizable. Visit the LightEval repository for more information.\nFor more recent evaluation approaches that are popular on the Hugging Face Hub that are currently more actively maintained, check out LightEval .\n"
+      },
+      {
+        "heading": "\ud83e\udd17 Evaluate",
+        "content": "A library for easily evaluating machine learning models and datasets.\nWith a single line of code, you get access to dozens of evaluation methods for different domains (NLP, Computer Vision, Reinforcement Learning, and more!). Be it on your local machine or in a distributed training setup, you can evaluate your models in a consistent and reproducible way!\nVisit the \ud83e\udd17 Evaluate organization for a full list of available metrics. Each metric has a dedicated Space with an interactive demo for how to use the metric, and a documentation card detailing the metrics limitations and usage.\nLearn the basics and become familiar with loading, computing, and saving with \ud83e\udd17 Evaluate. Start here if you are using \ud83e\udd17 Evaluate for the first time!\nPractical guides to help you achieve a specific goal. Take a look at these guides to learn how to use \ud83e\udd17 Evaluate to solve real-world problems.\nHigh-level explanations for building a better understanding of important topics such as considerations going into evaluating a model or dataset and the difference between metrics, measurements, and comparisons.\nTechnical descriptions of how \ud83e\udd17 Evaluate classes and methods work.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/timm",
+    "title": "timm",
+    "sections": [
+      {
+        "heading": "timm",
+        "content": "timm documentation\ntimm\n"
+      },
+      {
+        "heading": "timm",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "timm",
+        "content": "timm is a library containing SOTA computer vision models, layers, utilities, optimizers, schedulers, data-loaders, augmentations, and training/evaluation scripts.\ntimm\nIt comes packaged with >700 pretrained models, and is designed to be flexible and easy to use.\nRead the quick start guide to get up and running with the timm library. You will learn how to load, discover, and use pretrained models included in the library.\ntimm\nLearn the basics and become familiar with timm. Start here if you are using timm for the first time!\nTechnical descriptions of how timm classes and methods work.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/kernels",
+    "title": "Kernels",
+    "sections": [
+      {
+        "heading": "Kernels",
+        "content": "Kernels documentation\nKernels\n"
+      },
+      {
+        "heading": "Kernels",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Kernels",
+        "content": "The Kernel Hub allows Python libraries and applications to load compute\nkernels directly from the Hub . To support this kind\nof dynamic loading, Hub kernels differ from traditional Python kernel\npackages in that they are made to be:\nPortable : a kernel can be loaded from paths outside PYTHONPATH .\nPYTHONPATH\nUnique : multiple versions of the same kernel can be loaded in the\nsame Python process.\nCompatible : kernels must support all recent versions of Python and\nthe different PyTorch build configurations (various CUDA versions\nand C++ ABIs). Furthermore, older C library versions must be supported.\nYou can search for kernels on\nthe Hub.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/peft",
+    "title": "PEFT",
+    "sections": [
+      {
+        "heading": "PEFT",
+        "content": "PEFT documentation\nPEFT\n"
+      },
+      {
+        "heading": "PEFT",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "PEFT",
+        "content": "\ud83e\udd17 PEFT (Parameter-Efficient Fine-Tuning) is a library for efficiently adapting large pretrained models to various downstream applications without fine-tuning all of a model\u2019s parameters because it is prohibitively costly. PEFT methods only fine-tune a small number of (extra) model parameters - significantly decreasing computational and storage costs - while yielding performance comparable to a fully fine-tuned model. This makes it more accessible to train and store large language models (LLMs) on consumer hardware.\nPEFT is integrated with the Transformers, Diffusers, and Accelerate libraries to provide a faster and easier way to load, train, and use large models for inference.\nStart here if you're new to \ud83e\udd17 PEFT to get an overview of the library's main features, and how to train a model with a PEFT method.\nPractical guides demonstrating how to apply various PEFT methods across different types of tasks like image classification, causal language modeling, automatic speech recognition, and more. Learn how to use \ud83e\udd17 PEFT with the DeepSpeed and Fully Sharded Data Parallel scripts.\nGet a better theoretical understanding of how LoRA and various soft prompting methods help reduce the number of trainable parameters to make training more efficient.\nTechnical descriptions of how \ud83e\udd17 PEFT classes and methods work.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/accelerate",
+    "title": "Accelerate",
+    "sections": [
+      {
+        "heading": "Accelerate",
+        "content": "Accelerate documentation\nAccelerate\n"
+      },
+      {
+        "heading": "Accelerate",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Accelerate",
+        "content": "Accelerate is a library that enables the same PyTorch code to be run across any distributed configuration by adding just four lines of code! In short, training and inference at scale made simple, efficient and adaptable.\n+ from accelerate import Accelerator + accelerator = Accelerator() + model, optimizer, training_dataloader, scheduler = accelerator.prepare( +     model, optimizer, training_dataloader, scheduler + ) for batch in training_dataloader:\n      optimizer.zero_grad()\n      inputs, targets = batch\n      inputs = inputs.to(device)\n      targets = targets.to(device)\n      outputs = model(inputs)\n      loss = loss_function(outputs, targets) +     accelerator.backward(loss) optimizer.step()\n      scheduler.step()\nBuilt on torch_xla and torch.distributed , Accelerate takes care of the heavy lifting, so you don\u2019t have to write any custom code to adapt to these platforms.\nConvert existing codebases to utilize DeepSpeed , perform fully sharded data parallelism , and have automatic support for mixed-precision training!\ntorch_xla\ntorch.distributed\nTo get a better idea of this process, make sure to check out the Tutorials !\nThis code can then be launched on any system through Accelerate\u2019s CLI interface:\naccelerate launch {my_script.py}\nLearn the basics and become familiar with using Accelerate. Start here if you are using Accelerate for the first time!\nPractical guides to help you achieve a specific goal. Take a look at these guides to learn how to use Accelerate to solve real-world problems.\nHigh-level explanations for building a better understanding of important topics such as avoiding subtle nuances and pitfalls in distributed training and DeepSpeed.\nTechnical descriptions of how Accelerate classes and methods work.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/optimum",
+    "title": "Optimum",
+    "sections": [
+      {
+        "heading": "Optimum",
+        "content": "Optimum documentation\n\ud83e\udd17 Optimum\n"
+      },
+      {
+        "heading": "Optimum",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "\ud83e\udd17 Optimum",
+        "content": "\ud83e\udd17 Optimum is an extension of Transformers that provides a set of performance optimization tools to train and run models on targeted hardware with maximum efficiency.\nThe AI ecosystem evolves quickly, and more and more specialized hardware along with their own optimizations are emerging every day.\nAs such, Optimum enables developers to efficiently use any of these platforms with the same ease inherent to Transformers.\n\ud83e\udd17 Optimum is distributed as a collection of packages - check out the links below for an in-depth look at each one.\n"
+      },
+      {
+        "heading": "Hardware partners",
+        "content": "The packages below enable you to get the best of the \ud83e\udd17 Hugging Face ecosystem on various types of devices.\nAccelerate inference with NVIDIA TensorRT-LLM on the NVIDIA platform\nEnable performance optimizations for AMD Instinct GPUs and AMD Ryzen AI NPUs\nAccelerate your training and inference workflows with AWS Trainium and AWS Inferentia\nAccelerate your training and inference workflows with Google TPUs\nOptimize your model to speedup inference with OpenVINO\nMaximize training throughput and efficiency with Intel's Gaudi processor\nFast and efficient inference on FuriosaAI WARBOY\n"
+      },
+      {
+        "heading": "Open-source integrations",
+        "content": "\ud83e\udd17 Optimum also supports a variety of open-source frameworks to make model optimization very easy.\nApply quantization and graph optimization to accelerate Transformers models training and inference with ONNX Runtime\nPyTorch\u2019s native solution to inference on the Edge via ExecuTorch\nExport your PyTorch model to different formats such as ONNX\nCreate and compose custom graph transformations to optimize PyTorch Transformers models with Torch FX\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/optimum-neuron",
+    "title": "AWS Trainium & Inferentia",
+    "sections": [
+      {
+        "heading": "AWS Trainium & Inferentia",
+        "content": "AWS Trainium & Inferentia documentation\n\ud83e\udd17 Optimum Neuron\n"
+      },
+      {
+        "heading": "AWS Trainium & Inferentia",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "\ud83e\udd17 Optimum Neuron",
+        "content": "\ud83e\udd17 Optimum Neuron is the interface between the \ud83e\udd17 Transformers library and AWS Accelerators including AWS Trainium and AWS Inferentia .\nIt provides a set of tools enabling easy model loading, training and inference on single- and multi-Accelerator settings for different downstream tasks.\nThe list of officially validated models and tasks is available here .\nLearn the basics and become familiar with training & deploying transformers on AWS Trainium and AWS Inferentia.\n        Start here if you are using \ud83e\udd17 Optimum Neuron for the first time!\nPractical guides to help you achieve a specific goal. Take a look at these guides to learn how to use \ud83e\udd17 Optimum\n        Neuron to solve real-world problems.\nTechnical descriptions of how the classes and methods of \ud83e\udd17 Optimum Neuron work.\nTo learn more about how Optimum Neuron and AWS Inferentia and Trainium are being used by companies, read the White Paper.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/optimum-tpu",
+    "title": "Google TPUs",
+    "sections": [
+      {
+        "heading": "Google TPUs",
+        "content": "Google TPUs documentation\n\ud83e\udd17 Optimum TPU\n"
+      },
+      {
+        "heading": "Google TPUs",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "\ud83e\udd17 Optimum TPU",
+        "content": "While this project is no longer under development, you can continue exploring TPU solutions with:\nTPU inference for inference\n\ud83e\udd17 Accelerate for training\nOptimum TPU provides all the necessary machinery to leverage and optimize AI workloads running on Google Cloud TPU devices . Optimum-TPU is a HuggingFace solution to optimize HuggingFace products for the TPU platform. This allows users to use HuggingFace features and easy-to-use libraries on TPU with the best performance. We currently optimize transformers and TGI and integrate HuggingFace hub so you can access HuggingFace\u2019s large library of models.\nIf you are here to start using HuggingFace products on TPU, then you are in the right place\nThe API provides the overall same user-experience as HuggingFace transformers with the minimum amount of changes required to target performance for inference and training.\nOptimum TPU is meant to reduce as much as possible the friction in order to leverage Google Cloud TPU accelerators.\nAs such, we provide a pip installable package to make sure everyone can get easily started.\npip install optimum-tpu -f https://storage.googleapis.com/libtpu-releases/index.html\n"
+      },
+      {
+        "heading": "Why Choose TPUs",
+        "content": "TPUs excel at large-scale machine learning workloads with matrix computations, extended training periods, and large batch sizes. In contrast, GPUs offer more flexibility for models with custom operations or mixed CPU/GPU workloads. TPUs aren\u2019t ideal for workloads needing frequent branching, high-precision arithmetic, or custom training loop operations. More information can be found at https://cloud.google.com/tpu/docs/intro-to-tpu#when_to_use_tpus\n"
+      },
+      {
+        "heading": "Why Choose Optimum-TPU",
+        "content": "Optimum-TPU serves as the bridge between the HuggingFace ecosystem and Google Cloud TPU hardware. It dramatically simplifies what would otherwise be a complex integration process, providing an intuitive interface that abstracts away TPU-specific implementation details while maintaining high performance. Through automated optimizations, efficient batching strategies, intelligent memory management and more, Optimum-TPU ensures your models run at peak efficiency on TPU hardware. The framework\u2019s deep integration with the HuggingFace Hub catalog of models and datasets enables easy deployment and fine-tuning of state-of-the-art models with the familiar ease of use of HuggingFace libraries while maximizing TPU hardware capabilities.\nLearn the basics and become familiar with deploying transformers on Google TPUs.\n                Start here if you are using \ud83e\udd17 Optimum-TPU for the first time!\nPractical guides to help you achieve a specific goal. Take a look at these guides to learn how to use \ud83e\udd17 Optimum-TPU\n                to solve real-world problems.\nDeep dives into key concepts behind TPU optimization, architecture, and best practices.\n                Understand how TPUs work and how to maximize their potential.\nTechnical descriptions of how the classes and methods of \ud83e\udd17 Optimum-TPU work.\n                Detailed API documentation, configuration options, and implementation details.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/trl",
+    "title": "TRL",
+    "sections": [
+      {
+        "heading": "TRL",
+        "content": "TRL documentation\nTRL - Transformer Reinforcement Learning\n"
+      },
+      {
+        "heading": "TRL",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "TRL - Transformer Reinforcement Learning",
+        "content": "TRL is a full stack library where we provide a set of tools to train transformer language models with methods like Supervised Fine-Tuning (SFT), Group Relative Policy Optimization (GRPO), Direct Preference Optimization (DPO), Reward Modeling, and more.\nThe library is integrated with \ud83e\udd17 transformers .\n"
+      },
+      {
+        "heading": "\ud83c\udf89 What\u2019s New",
+        "content": "OpenEnv Integration: TRL now supports OpenEnv , the open-source framework from Meta for defining, deploying, and interacting with environments in reinforcement learning and agentic workflows.\nExplore how to seamlessly integrate TRL with OpenEnv in our dedicated documentation .\n"
+      },
+      {
+        "heading": "Taxonomy",
+        "content": "Below is the current list of TRL trainers, organized by method type (\u26a1\ufe0f = vLLM support; \ud83e\uddea = experimental).\n"
+      },
+      {
+        "heading": "Online methods",
+        "content": "GRPOTrainer \u26a1\ufe0f\nGRPOTrainer\nRLOOTrainer \u26a1\ufe0f\nRLOOTrainer\nOnlineDPOTrainer \ud83e\uddea \u26a1\ufe0f\nOnlineDPOTrainer\nNashMDTrainer \ud83e\uddea \u26a1\ufe0f\nNashMDTrainer\nPPOTrainer \ud83e\uddea\nPPOTrainer\nXPOTrainer \ud83e\uddea \u26a1\ufe0f\nXPOTrainer\n"
+      },
+      {
+        "heading": "Reward modeling",
+        "content": "RewardTrainer\nRewardTrainer\nPRMTrainer \ud83e\uddea\nPRMTrainer\n"
+      },
+      {
+        "heading": "Offline methods",
+        "content": "SFTTrainer\nSFTTrainer\nDPOTrainer\nDPOTrainer\nBCOTrainer \ud83e\uddea\nBCOTrainer\nCPOTrainer \ud83e\uddea\nCPOTrainer\nKTOTrainer \ud83e\uddea\nKTOTrainer\nORPOTrainer \ud83e\uddea\nORPOTrainer\n"
+      },
+      {
+        "heading": "Knowledge distillation",
+        "content": "GKDTrainer \ud83e\uddea\nGKDTrainer\nMiniLLMTrainer \ud83e\uddea\nMiniLLMTrainer\nYou can also explore TRL-related models, datasets, and demos in the TRL Hugging Face organization .\n"
+      },
+      {
+        "heading": "Learn",
+        "content": "Learn post-training with TRL and other libraries in \ud83e\udd17 smol course .\n"
+      },
+      {
+        "heading": "Contents",
+        "content": "The documentation is organized into the following sections:\nGetting Started : installation and quickstart guide.\nConceptual Guides : dataset formats, training FAQ, and understanding logs.\nHow-to Guides : reducing memory usage, speeding up training, distributing training, etc.\nIntegrations : DeepSpeed, Liger Kernel, PEFT, etc.\nExamples : example overview, community tutorials, etc.\nAPI : trainers, utils, etc.\n"
+      },
+      {
+        "heading": "Blog posts",
+        "content": "Published October 23, 2025\nBuilding the Open Agent Ecosystem Together: Introducing OpenEnv\nPublished on August 7, 2025\nVision Language Model Alignment in TRL \u26a1\ufe0f\nPublished on June 3, 2025\nNO GPU left behind: Unlocking Efficiency with Co-located vLLM in TRL\nPublished on May 25, 2025\n\ud83d\udc2f Liger GRPO meets TRL\nPublished on January 28, 2025\nOpen-R1: a fully open reproduction of DeepSeek-R1\nPublished on July 10, 2024\nPreference Optimization for Vision Language Models with TRL\nPublished on June 12, 2024\nPutting RL back in RLHF\nPublished on September 29, 2023\nFinetune Stable Diffusion Models with DDPO via TRL\nPublished on August 8, 2023\nFine-tune Llama 2 with DPO\nPublished on April 5, 2023\nStackLLaMA: A hands-on guide to train LLaMA with RLHF\nPublished on March 9, 2023\nFine-tuning 20B LLMs with RLHF on a 24GB consumer GPU\nPublished on December 9, 2022\nIllustrating Reinforcement Learning from Human Feedback\n"
+      },
+      {
+        "heading": "Talks",
+        "content": "Talk given on October 30, 2025\nFine tuning with TRL\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/safetensors",
+    "title": "Safetensors",
+    "sections": [
+      {
+        "heading": "Safetensors",
+        "content": "Safetensors documentation\nSafetensors\n"
+      },
+      {
+        "heading": "Safetensors",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Safetensors",
+        "content": "Safetensors is a new simple format for storing tensors safely (as opposed to pickle) and that is still fast (zero-copy). Safetensors is really fast \ud83d\ude80 .\n"
+      },
+      {
+        "heading": "Installation",
+        "content": "with pip:\npip install safetensors\nwith conda:\nconda install -c huggingface safetensors\n"
+      },
+      {
+        "heading": "Load tensors",
+        "content": "from safetensors import safe_open\n\ntensors = {} with safe_open( \"model.safetensors\" , framework= \"pt\" , device= 0 ) as f: for k in f.keys():\n        tensors[k] = f.get_tensor(k)\nLoading only part of the tensors (interesting when running on multiple GPU)\nfrom safetensors import safe_open\n\ntensors = {} with safe_open( \"model.safetensors\" , framework= \"pt\" , device= 0 ) as f:\n    tensor_slice = f.get_slice( \"embedding\" )\n    vocab_size, hidden_dim = tensor_slice.get_shape()\n    tensor = tensor_slice[:, :hidden_dim]\n"
+      },
+      {
+        "heading": "Save tensors",
+        "content": "import torch from safetensors.torch import save_file\n\ntensors = { \"embedding\" : torch.zeros(( 2 , 2 )), \"attention\" : torch.zeros(( 2 , 3 ))\n}\nsave_file(tensors, \"model.safetensors\" )\n"
+      },
+      {
+        "heading": "Format",
+        "content": "Let\u2019s say you have safetensors file named model.safetensors , then model.safetensors will have the following internal format:\nmodel.safetensors\nmodel.safetensors\n"
+      },
+      {
+        "heading": "Featured Projects",
+        "content": "Safetensors is being used widely at leading AI enterprises, such as Hugging Face , EleutherAI ,\u00a0and StabilityAI . Here is a non-exhaustive list of projects that are using safetensors:\nhuggingface/transformers\nml-explore/mlx\nhuggingface/candle\nAUTOMATIC1111/stable-diffusion-webui\nLlama-cpp\nmicrosoft/TaskMatrix\nhpcaitech/ColossalAI\nhuggingface/pytorch-image-models\nCivitAI\nhuggingface/diffusers\ncoreylowman/dfdx\ninvoke-ai/InvokeAI\noobabooga/text-generation-webui\nSanster/lama-cleaner\nPaddlePaddle/PaddleNLP\nAIGC-Audio/AudioGPT\nbrycedrennan/imaginAIry\ncomfyanonymous/ComfyUI\nLianjiaTech/BELLE\nalvarobartt/safejax\nMaartenGr/BERTopic\nrachthree/safestructures\njustinchuby/onnx-safetensors\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/bitsandbytes",
+    "title": "Bitsandbytes",
+    "sections": [
+      {
+        "heading": "Bitsandbytes",
+        "content": "Bitsandbytes documentation\nbitsandbytes\n"
+      },
+      {
+        "heading": "Bitsandbytes",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "bitsandbytes",
+        "content": "bitsandbytes enables accessible large language models via k-bit quantization for PyTorch. bitsandbytes provides three main features for dramatically reducing memory consumption for inference and training:\n8-bit optimizers uses block-wise quantization to maintain 32-bit performance at a small fraction of the memory cost.\nLLM.int8() or 8-bit quantization enables large language model inference with only half the required memory and without any performance degradation. This method is based on vector-wise quantization to quantize most features to 8-bits and separately treating outliers with 16-bit matrix multiplication.\nQLoRA or 4-bit quantization enables large language model training with several memory-saving techniques that don\u2019t compromise performance. This method quantizes a model to 4-bits and inserts a small set of trainable low-rank adaptation (LoRA) weights to allow training.\n"
+      },
+      {
+        "heading": "License",
+        "content": "bitsandbytes is MIT licensed.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/lighteval",
+    "title": "Lighteval",
+    "sections": [
+      {
+        "heading": "Lighteval",
+        "content": "Lighteval documentation\nLighteval\n"
+      },
+      {
+        "heading": "Lighteval",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Lighteval",
+        "content": "\ud83e\udd17 Lighteval is your all-in-one toolkit for evaluating Large Language Models\n(LLMs) across multiple backends with ease. Dive deep into your model\u2019s\nperformance by saving and exploring detailed, sample-by-sample results to debug\nand see how your models stack up.\n"
+      },
+      {
+        "heading": "\ud83d\ude80 Multi-Backend Support",
+        "content": "Evaluate your models using the most popular and efficient inference backends:\neval : Use inspect-ai as backend to evaluate and inspect your models ! (prefered way)\neval\ntransformers : Evaluate models on CPU or one or more GPUs using \ud83e\udd17\nAccelerate\ntransformers\nnanotron : Evaluate models in distributed settings using \u26a1\ufe0f\nNanotron\nnanotron\nvllm : Evaluate models on one or more GPUs using \ud83d\ude80\nVLLM\nvllm\ncustom : Evaluate custom models (can be anything)\ncustom\nsglang : Evaluate models using SGLang as backend\nsglang\ninference-endpoint : Evaluate models using Hugging Face\u2019s Inference Endpoints API\ninference-endpoint\ntgi : Evaluate models using \ud83d\udd17 Text Generation Inference running locally\ntgi\nlitellm : Evaluate models on any compatible API using LiteLLM\nlitellm\ninference-providers : Evaluate models using HuggingFace\u2019s inference providers as backend**: Distributed training and evaluation\ninference-providers\n"
+      },
+      {
+        "heading": "\ud83d\udcca Comprehensive Evaluation",
+        "content": "Extensive Task Library : 1000s pre-built evaluation tasks\nCustom Task Creation : Build your own evaluation tasks\nFlexible Metrics : Support for custom metrics and scoring\nDetailed Analysis : Sample-by-sample results for deep insights\n"
+      },
+      {
+        "heading": "\ud83d\udd27 Easy Customization",
+        "content": "Customization at your fingertips: create new tasks , metrics or model tailored to your needs, or browse all our existing tasks and metrics.\n"
+      },
+      {
+        "heading": "\u2601\ufe0f Seamless Integration",
+        "content": "Seamlessly experiment, benchmark, and store your results on the Hugging Face Hub, S3, or locally.\n"
+      },
+      {
+        "heading": "Installation",
+        "content": "pip install lighteval\n"
+      },
+      {
+        "heading": "Basic Usage",
+        "content": "lighteval eval \"hf-inference-providers/openai/gpt-oss-20b\" \\\n    gpqa:diamond \\\n    --bundle-dir gpt-oss-bundle \\\n    --repo-id OpenEvals/evals\nResulting Space:\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/trackio",
+    "title": "Trackio",
+    "sections": [
+      {
+        "heading": "Trackio",
+        "content": "Trackio documentation\nTrackio\n"
+      },
+      {
+        "heading": "Trackio",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Trackio",
+        "content": "\ntrackio is a lightweight, free experiment tracking Python library built on top of Hugging Face Datasets and Spaces \ud83e\udd17.\ntrackio\n\nAPI compatible with wandb.init , wandb.log , and wandb.finish . Drop-in replacement: just Copied import trackio as wandb\nAPI compatible with wandb.init , wandb.log , and wandb.finish . Drop-in replacement: just\nwandb.init\nwandb.log\nwandb.finish\nimport trackio as wandb\nLocal-first design: dashboard runs locally by default. You can also host it on Spaces by specifying a space_id .\nLocal-first design: dashboard runs locally by default. You can also host it on Spaces by specifying a space_id .\nspace_id\nPersists logs locally (or in a private Hugging Face Dataset)\nPersists logs locally (or in a private Hugging Face Dataset)\nVisualize experiments with a Gradio dashboard locally (or on Hugging Face Spaces)\nVisualize experiments with a Gradio dashboard locally (or on Hugging Face Spaces)\nLLM-friendly : Designed for autonomous ML experiments with CLI commands and Python APIs that enable LLMs to easily log and query experiment data.\nLLM-friendly : Designed for autonomous ML experiments with CLI commands and Python APIs that enable LLMs to easily log and query experiment data.\nEverything here, including hosting on Hugging Face, is free !\nEverything here, including hosting on Hugging Face, is free !\nTrackio is designed to be lightweight (the core codebase is <3,000 lines of Python code), not fully-featured. It is designed in an extensible way and written entirely in Python so that developers can easily fork the repository and add functionality that they care about.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/smolagents",
+    "title": "smolagents",
+    "sections": [
+      {
+        "heading": "smolagents",
+        "content": "smolagents documentation\nsmolagents\n"
+      },
+      {
+        "heading": "smolagents",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "What is smolagents?",
+        "content": "smolagents is an open-source Python library designed to make it extremely easy to build and run agents using just a few lines of code.\nsmolagents\nKey features of smolagents include:\nsmolagents\n\u2728 Simplicity : The logic for agents fits in ~thousand lines of code. We kept abstractions to their minimal shape above raw code!\n\ud83e\uddd1\u200d\ud83d\udcbb First-class support for Code Agents : CodeAgent writes its actions in code (as opposed to \u201cagents being used to write code\u201d) to invoke tools or perform computations, enabling natural composability (function nesting, loops, conditionals). To make it secure, we support executing in sandboxed environment via Modal , Blaxel , E2B , or Docker.\nCodeAgent\n\ud83d\udce1 Common Tool-Calling Agent Support : In addition to CodeAgents, ToolCallingAgent supports usual JSON/text-based tool-calling for scenarios where that paradigm is preferred.\nToolCallingAgent\n\ud83e\udd17 Hub integrations : Seamlessly share and load agents and tools to/from the Hub as Gradio Spaces.\n\ud83c\udf10 Model-agnostic : Easily integrate any large language model (LLM), whether it\u2019s hosted on the Hub via Inference providers , accessed via APIs such as OpenAI, Anthropic, or many others via LiteLLM integration, or run locally using Transformers or Ollama. Powering an agent with your preferred LLM is straightforward and flexible.\n\ud83d\udc41\ufe0f Modality-agnostic : Beyond text, agents can handle vision, video, and audio inputs, broadening the range of possible applications. Check out this tutorial for vision.\n\ud83d\udee0\ufe0f Tool-agnostic : You can use tools from any MCP server , from LangChain , you can even use a Hub Space as a tool.\n\ud83d\udcbb CLI Tools : Comes with command-line utilities (smolagent, webagent) for quickly running agents without writing boilerplate code.\n"
+      },
+      {
+        "heading": "Quickstart",
+        "content": "Get started with smolagents in just a few minutes! This guide will show you how to create and run your first agent.\n"
+      },
+      {
+        "heading": "Installation",
+        "content": "Install smolagents with pip:\npip install 'smolagents[toolkit]' # Includes default tools like web search\n"
+      },
+      {
+        "heading": "Create Your First Agent",
+        "content": "Here\u2019s a minimal example to create and run an agent:\nfrom smolagents import CodeAgent, InferenceClientModel # Initialize a model (using Hugging Face Inference API) model = InferenceClientModel() # Uses a default model # Create an agent with no tools agent = CodeAgent(tools=[], model=model) # Run the agent with a task result = agent.run( \"Calculate the sum of numbers from 1 to 10\" ) print (result)\nThat\u2019s it! Your agent will use Python code to solve the task and return the result.\n"
+      },
+      {
+        "heading": "Adding Tools",
+        "content": "Let\u2019s make our agent more capable by adding some tools:\nfrom smolagents import CodeAgent, InferenceClientModel, DuckDuckGoSearchTool\n\nmodel = InferenceClientModel()\nagent = CodeAgent(\n    tools=[DuckDuckGoSearchTool()],\n    model=model,\n) # Now the agent can search the web! result = agent.run( \"What is the current weather in Paris?\" ) print (result)\n"
+      },
+      {
+        "heading": "Using Different Models",
+        "content": "You can use various models with your agent:\n# Using a specific model from Hugging Face model = InferenceClientModel(model_id= \"meta-llama/Llama-2-70b-chat-hf\" ) # Using OpenAI/Anthropic (requires 'smolagents[litellm]') from smolagents import LiteLLMModel\nmodel = LiteLLMModel(model_id= \"gpt-4\" ) # Using local models (requires 'smolagents[transformers]') from smolagents import TransformersModel\nmodel = TransformersModel(model_id= \"meta-llama/Llama-2-7b-chat-hf\" )\n"
+      },
+      {
+        "heading": "Next Steps",
+        "content": "Learn how to set up smolagents with various models and tools in the Installation Guide\nCheck out the Guided Tour for more advanced features\nLearn about building custom tools\nExplore secure code execution\nSee how to create multi-agent systems\nLearn the basics and become familiar with using Agents. Start here if you are using Agents for the first time!\nPractical guides to help you achieve a specific goal: create an agent to generate and test SQL queries!\nHigh-level explanations for building a better understanding of important topics.\nHorizontal tutorials that cover important aspects of building agents.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/lerobot",
+    "title": "LeRobot",
+    "sections": [
+      {
+        "heading": "LeRobot",
+        "content": "LeRobot documentation\nLeRobot\n"
+      },
+      {
+        "heading": "LeRobot",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "LeRobot",
+        "content": "State-of-the-art machine learning for real-world robotics\n\ud83e\udd17 LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier for entry to robotics so that everyone can contribute and benefit from sharing datasets and pretrained models.\n\ud83e\udd17 LeRobot contains state-of-the-art approaches that have been shown to transfer to the real-world with a focus on imitation learning and reinforcement learning.\n\ud83e\udd17 LeRobot already provides a set of pretrained models, datasets with human collected demonstrations, and simulated environments so that everyone can get started.\n\ud83e\udd17 LeRobot hosts pretrained models and datasets on the LeRobot HuggingFace page.\nJoin the LeRobot community on Discord\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/reachy_mini",
+    "title": "Reachy Mini",
+    "sections": [
+      {
+        "heading": "Reachy Mini",
+        "content": "Reachy Mini documentation\nReachy Mini \ud83e\udd16\n"
+      },
+      {
+        "heading": "Reachy Mini",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Reachy Mini \ud83e\udd16",
+        "content": "\nReachy Mini is an open-source, expressive robot made for hackers and AI builders.\n\ud83d\uded2 Buy Reachy Mini\n\n"
+      },
+      {
+        "heading": "\u26a1\ufe0f Build and start your own robot",
+        "content": "Choose your platform to access the specific guide:\n\u26a1 Pro tip: Install uv for 10-100x faster app installations (auto-detected, falls back to pip ).\npip\n"
+      },
+      {
+        "heading": "\ud83d\udcf1 Apps & Ecosystem",
+        "content": "Reachy Mini comes with an app store powered by Hugging Face Spaces. You can install these apps directly from your robot\u2019s dashboard with one click!\n\ud83d\udde3\ufe0f Conversation App : Talk naturally with Reachy Mini (powered by LLMs).\n\ud83d\udcfb Radio : Listen to the radio with Reachy Mini !\n\ud83d\udc4b Hand Tracker : The robot follows your hand movements in real-time.\n\ud83d\udc49 Browse all apps on Hugging Face\n"
+      },
+      {
+        "heading": "Quick Look",
+        "content": "Control your robot in just a few lines of code :\nfrom reachy_mini import ReachyMini from reachy_mini.utils import create_head_pose with ReachyMini() as mini: # Look up and tilt head mini.goto_target(\n        head=create_head_pose(z= 10 , roll= 15 , degrees= True , mm= True ),\n        duration= 1.0 )\n"
+      },
+      {
+        "heading": "User guides",
+        "content": "Installation : 5 minutes to set up your computer\nQuickstart Guide : Run your first behavior on Reachy Mini\nPython SDK : Learn to move, see, speak, and hear.\nAI Integrations : Connect LLMs, build Apps, and publish to Hugging Face.\nCore Concepts : Architecture, coordinate systems, and safety limits.\n\ud83e\udd17 Share your app with the community\n\ud83d\udcc2 Browse the Examples Folder\n"
+      },
+      {
+        "heading": "\ud83d\udee0 Hardware Overview",
+        "content": "Reachy Mini robots are sold as kits and generally take 2 to 3 hours to assemble. Detailed step-by-step guides are available in the platform-specific folders linked above.\nReachy Mini (Wireless): Runs onboard (RPi 4), autonomous, includes IMU. See specs .\nReachy Mini Lite: Runs on your PC, powered via wall outlet. See specs .\n"
+      },
+      {
+        "heading": "\u2753 Troubleshooting",
+        "content": "Encountering an issue? \ud83d\udc49 Check the Troubleshooting & FAQ Guide\n"
+      },
+      {
+        "heading": "\ud83e\udd1d Community & Contributing",
+        "content": "Join the Community: Join Discord to share your moments with Reachy, build apps together, and get help.\nFound a bug? Open an issue on this repository .\n"
+      },
+      {
+        "heading": "License",
+        "content": "This project is licensed under the Apache 2.0 License. See the LICENSE file for details.\nHardware design files are licensed under Creative Commons BY-SA-NC.\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/autotrain",
+    "title": "AutoTrain",
+    "sections": [
+      {
+        "heading": "AutoTrain",
+        "content": "AutoTrain documentation\nAutoTrain\n"
+      },
+      {
+        "heading": "AutoTrain",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "AutoTrain",
+        "content": "This project is no longer maintained. No new features will be added and bugs will not be fixed. We recommend using Axolotl , TRL , or transformers.Trainer .\n\n\ud83e\udd17 AutoTrain Advanced (or simply AutoTrain), developed by Hugging Face, is a robust no-code\nplatform designed to simplify the process of training state-of-the-art models across\nmultiple domains: Natural Language Processing (NLP), Computer Vision (CV),\nand even Tabular Data analysis. This tool leverages the powerful frameworks created by\nvarious teams at Hugging Face, making advanced machine learning and artificial intelligence accessible to a broader\naudience without requiring deep technical expertise.\n"
+      },
+      {
+        "heading": "Who should use AutoTrain?",
+        "content": "AutoTrain is the perfect tool for anyone eager to dive into the world of machine learning\nwithout getting bogged down by the complexities of model training.\nWhether you\u2019re a business professional, researcher, educator, or hobbyist,\nAutoTrain offers the simplicity of a no-code interface while still providing the\ncapabilities necessary to develop sophisticated models tailored to your unique datasets.\nAutoTrain is for anyone who wants to train a state-of-the-art model for a NLP, CV, Speech or even Tabular task,\nbut doesn\u2019t want to spend time on the technical details of training a model.\nOur mission is to democratize machine learning technology, ensuring it is not only\naccessible to data scientists and ML engineers but also to those without a technical\nbackground. If you\u2019re looking to harness the power of AI for your projects,\nAutoTrain is your answer.\n"
+      },
+      {
+        "heading": "How to use AutoTrain?",
+        "content": "We offer several ways to use AutoTrain:\nNo code users can use AutoTrain Advanced by creating a new space with AutoTrain Docker image: Click here to create AutoTrain Space.\nRemember to keep your space private and ensure it is equipped with the necessary hardware resources (GPU) for optimal performance.\nNo code users can use AutoTrain Advanced by creating a new space with AutoTrain Docker image: Click here to create AutoTrain Space.\nRemember to keep your space private and ensure it is equipped with the necessary hardware resources (GPU) for optimal performance.\nAutoTrain Advanced\nIf you prefer a more hands-on approach, AutoTrain Advanced can also be run locally\nthrough its intuitive UI or accessed via the Python API provided in the autotrain-advanced\npackage. This flexibility allows developers to integrate AutoTrain capabilities directly\ninto their projects, customize workflows, and enhance their toolsets with advanced machine\nlearning functionalities.\nIf you prefer a more hands-on approach, AutoTrain Advanced can also be run locally\nthrough its intuitive UI or accessed via the Python API provided in the autotrain-advanced\npackage. This flexibility allows developers to integrate AutoTrain capabilities directly\ninto their projects, customize workflows, and enhance their toolsets with advanced machine\nlearning functionalities.\nBy bridging the gap between cutting-edge technology and practical usability,\nAutoTrain Advanced empowers users to achieve remarkable results in AI without the need\nfor extensive programming knowledge. Start your journey with AutoTrain today and unlock\nthe potential of machine learning for your projects!\n"
+      },
+      {
+        "heading": "Walkthroughs",
+        "content": "To get started with AutoTrain, check out our walkthroughs and tutorials:\nExtractive Question Answering with AutoTrain\nFinetuning PaliGemma with AutoTrain\nTraining an Object Detection Model with AutoTrain\nHow to Fine-Tune Custom Embedding Models Using AutoTrain\nTrain Custom Models on Hugging Face Spaces with AutoTrain SpaceRunner\nHow to Finetune phi-3 on MacBook Pro\nFinetune Mixtral 8x7B with AutoTrain\nEasily Train Models with H100 GPUs on NVIDIA DGX Cloud\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/chat-ui",
+    "title": "Chat UI",
+    "sections": [
+      {
+        "heading": "Chat UI",
+        "content": "Chat UI documentation\nChat UI\n"
+      },
+      {
+        "heading": "Chat UI",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Chat UI",
+        "content": "Open source chat interface with support for tools, multimodal inputs, and intelligent routing across models. The app uses MongoDB and SvelteKit behind the scenes. Try the live version called HuggingChat on hf.co/chat or setup your own instance .\nChat UI connects to any OpenAI-compatible API endpoint, making it work with:\nHugging Face Inference Providers\nOllama\nllama.cpp\nOpenRouter\nAny other OpenAI-compatible service\nMCP Tools : Function calling via Model Context Protocol (MCP) servers\nLLM Router : Intelligent routing to select the best model for each request\nMultimodal : Image uploads on models that support vision\nOpenID : Optional user authentication via OpenID Connect\n"
+      },
+      {
+        "heading": "Quickstart",
+        "content": "Step 1 - Create .env.local :\n.env.local\nOPENAI_BASE_URL =https://router.huggingface.co/v1 OPENAI_API_KEY =hf_************************\nYou can use any OpenAI-compatible endpoint:\nOPENAI_BASE_URL\nOPENAI_API_KEY\nhttps://router.huggingface.co/v1\nhf_xxx\nhttp://127.0.0.1:11434/v1\nollama\nhttp://127.0.0.1:8080/v1\nsk-local\nhttps://openrouter.ai/api/v1\nsk-or-v1-xxx\nStep 2 - Install and run:\ngit clone https://github.com/huggingface/chat-ui cd chat-ui\nnpm install\nnpm run dev -- --open\nThat\u2019s it! Chat UI will automatically discover available models from your endpoint.\nMongoDB is optional for development. When MONGODB_URL is not set, Chat UI uses an embedded database that persists to ./db .\nMONGODB_URL\n./db\nFor production deployments, see the installation guides .\n\n"
+      }
+    ]
+  },
+  {
+    "url": "https://huggingface.co/docs/leaderboards",
+    "title": "Leaderboards",
+    "sections": [
+      {
+        "heading": "Leaderboards",
+        "content": "Leaderboards documentation\nLeaderboards and Evaluations\n"
+      },
+      {
+        "heading": "Leaderboards",
+        "content": "and get access to the augmented documentation experience\nto get started\n\n"
+      },
+      {
+        "heading": "Leaderboards and Evaluations",
+        "content": "The Hub contains leaderboards and evaluations for machine learning models, including LLMs, chatbots, and more. There are three types of leaderboards:\nEval Results from official benchmark datasets like GPQA, MMLU-Pro, or other datasets used in academic papers. When results are published in model repositories, the scores are are shown on the model page.\nCommunity Managed Leaderboards live on Spaces and are managed by the community for specific use cases.\nOpen LLM Leaderboard was a project curated by the Hugging Face team to evaluate and rank open source LLMs and chatbots, and provide reproducible scores separating marketing fluff from actual progress in the field.\n\n\n"
+      }
+    ]
+  }
+]
