@@ -73,7 +73,14 @@ Answer
 
 ---
 
+## InsightRAG UI
+
+<img width="575" height="722" alt="Screenshot 2026-03-10 at 10 45 44 PM" src="https://github.com/user-attachments/assets/9e7f6064-24da-4cc7-9007-000b589b338b" />
+
+---
+
 ## Future Improvements
+
 
 - RAG evaluation metrics (faithfulness / relevance)
 - Including PDFs
