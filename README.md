@@ -67,7 +67,7 @@ ChromaDB Vector Search
    ↓  
 Top-K Context  
    ↓  
-Groq LLM (llama-3.3-70b-versatile)
+Groq LLM (llama-3.3-70b-versatile)  
    ↓  
 Answer  
 
